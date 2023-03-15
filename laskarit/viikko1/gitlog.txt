@@ -1,0 +1,261 @@
+sansilla@lx2-fuxi058:~/ohte_viikko1$ git log --stat | cat 
+
+commit 2ceda036eb104b7df4943aa2d9d20b817627b773 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:53:16 2023 +0200 
+
+  
+
+    poistettu ja uudelleennimetty 
+
+  
+
+file2           | 0 
+
+file1 => file22 | 0 
+
+2 files changed, 0 insertions(+), 0 deletions(-) 
+
+  
+
+commit 897099beb727eaf0cfeb4b4221662e06a538d48f 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:46:09 2023 +0200 
+
+  
+
+    kolme tiedostoa luotu 
+
+  
+
+file1 | 0 
+
+file2 | 0 
+
+file3 | 0 
+
+3 files changed, 0 insertions(+), 0 deletions(-) 
+
+  
+
+commit fd1cd4a59dd7da36bf1a14c82f176bbd86a575c1 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:36:51 2023 +0200 
+
+  
+
+    kolmas.txt muokattu 
+
+  
+
+kolmas.txt | 5 ++++- 
+
+1 file changed, 4 insertions(+), 1 deletion(-) 
+
+  
+
+commit 7afe4c1177d80bcecd8c511d93bc2231f5a742fb 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:35:38 2023 +0200 
+
+  
+
+    eka.txt muokattu 
+
+  
+
+eka.txt | 7 +++---- 
+
+1 file changed, 3 insertions(+), 4 deletions(-) 
+
+  
+
+commit 51dbf7eadcf5aa8690d6a33347cab7dae3f73cf5 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:08:17 2023 +0200 
+
+  
+
+    tiedosto.txt nimetty uudelleen eka.txt 
+
+  
+
+tiedosto.txt => eka.txt | 0 
+
+1 file changed, 0 insertions(+), 0 deletions(-) 
+
+  
+
+commit ae9d04077b2a3d4895beec2eb6c151809f54bf66 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:05:08 2023 +0200 
+
+  
+
+    poistettu toinen.txt 
+
+  
+
+toinen.txt | 1 - 
+
+1 file changed, 1 deletion(-) 
+
+  
+
+commit 05992d415179064edfbc4846f3f8fb6508009da4 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 14:00:27 2023 +0200 
+
+  
+
+    lisää muokkausta 
+
+  
+
+tiedosto.txt | 20 ++++++++++++++------ 
+
+1 file changed, 14 insertions(+), 6 deletions(-) 
+
+  
+
+commit f20c548e87b569fc12240c97f7d7b3d354cdf705 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:56:29 2023 +0200 
+
+  
+
+    tiedosto.txt muokattu 
+
+  
+
+tiedosto.txt | 9 +++++++++ 
+
+1 file changed, 9 insertions(+) 
+
+  
+
+commit 3e27a4a4327fffc66404d359fedc571d90073185 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:44:34 2023 +0200 
+
+  
+
+    tiedosto pale.txt luotu 
+
+  
+
+stuff/pale.txt | 0 
+
+1 file changed, 0 insertions(+), 0 deletions(-) 
+
+  
+
+commit cca8a51fc6dc2151537ffffc9bc10185c755da90 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:39:52 2023 +0200 
+
+  
+
+    muutos 
+
+  
+
+kolmas.txt | 1 + 
+
+1 file changed, 1 insertion(+) 
+
+  
+
+commit 7c6c9f13fd716b17b294ee2b0455953df7ded9d6 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:38:03 2023 +0200 
+
+  
+
+    muutos 
+
+  
+
+toinen.txt | 1 + 
+
+1 file changed, 1 insertion(+) 
+
+  
+
+commit 7037e29fa15cd04b8b34cf1c58186278b68ad2a8 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:34:44 2023 +0200 
+
+  
+
+    kolmas.txt luotu 
+
+  
+
+kolmas.txt | 0 
+
+1 file changed, 0 insertions(+), 0 deletions(-) 
+
+  
+
+commit e04c5eb20862d40b7aba4660e9020c1e86ba20ec 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:29:35 2023 +0200 
+
+  
+
+    muutos ja lisäys 
+
+  
+
+tiedosto.txt | 1 + 
+
+toinen.txt   | 0 
+
+2 files changed, 1 insertion(+) 
+
+  
+
+commit 8cbacc491a69ba1c7a23b7d9517da9f1bb87d250 
+
+Author: Sandra Sillanpää <sandra.sillanpaa@helsinki.fi> 
+
+Date:   Wed Mar 15 13:23:24 2023 +0200 
+
+  
+
+    tiedosto.txt luotu 
+
+  
+
+tiedosto.txt | 0 
+
+1 file changed, 0 insertions(+), 0 deletions(-) 
+
+sansilla@lx2-fuxi058:~/ohte_viikko1$ 
