@@ -5,3 +5,5 @@ heippa vaan
 [Gitlog](https://github.com/sansilla/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
 :)
+
+ääää
