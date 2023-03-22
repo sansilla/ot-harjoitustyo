@@ -10,4 +10,4 @@ Viikko 1
 
 Viikko 2
 
-
+[Kattavuusraportti](file:///home/sansilla/Pictures/Screenshots/Screenshot%20from%202023-03-22%2013-54-18.png)
