@@ -1,4 +1,4 @@
-päivä: 22.3
+päivä: 22.3.
 
 käytetty aika: 1h
 
