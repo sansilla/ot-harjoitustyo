@@ -1,3 +1,5 @@
-päivä      aika   	mitä tein
+päivä: 22.3
 
-22.3. 	  1h 	    aiheen ideointi, dokumentaation aloittaminen
+käytetty aika: 1h
+
+mitä tein: aiheen ideointi, dokumentaation aloittaminen
