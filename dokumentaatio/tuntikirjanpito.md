@@ -1,5 +1,5 @@
-päivä: 22.3.
+Päivä: 22.3.
 
-käytetty aika: 1h
+Käytetty aika: 1h
 
-mitä tein: aiheen ideointi, dokumentaation aloittaminen
+Mitä tein: aiheen ideointi, dokumentaation aloittaminen
