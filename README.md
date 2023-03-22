@@ -10,6 +10,4 @@ Viikko 1
 
 Viikko 2
 
-[Maksukortti](https://github.com/sansilla/ot-harjoitustyo/blob/master/laskarit/viikko2/maksukortti/src/maksukortti.py)
-
 
