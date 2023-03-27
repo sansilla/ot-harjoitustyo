@@ -6,6 +6,7 @@
       Lauta "1" --> "*" Ruutu
       Ruutu <|-- Aloitusruutu
       Ruutu <|-- Vankila
+      Ruutu <|-- SattumaYhteismaa
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
