@@ -8,5 +8,3 @@ Viikko 1
 
 [Gitlog](https://github.com/sansilla/ot-harjoitustyo/blob/master/laskarit/viikko1/gitlog.txt)
 
-Viikko 2
-kakka
