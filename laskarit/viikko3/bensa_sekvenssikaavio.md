@@ -1,2 +1,4 @@
-sequenceDiagram
-Machine
+```mermaid
+ sequenceDiagram
+     Machine
+```
