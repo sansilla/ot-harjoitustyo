@@ -1,8 +1,9 @@
 
 ```mermaid
  classDiagram
-      Pelinappula "1" --> "1" Pelaaja
+      Pelaaja "1" --> "1" Pelinappula
       Pelinappula "*" --> "1" Ruutu
+      Lauta "1" --> "*" Ruutu
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
