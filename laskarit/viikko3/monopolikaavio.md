@@ -11,14 +11,6 @@
       }
       class Aloitusruutu{
       }
-      class Vankila{
-      }
-      class Sattuma&yhteismaa{
-      }
-      class Asemat&laitokset{
-      }
-      class Normaalit_kadut{
-      }
       class Lauta{
           1 kpl
           sis. ruudut
