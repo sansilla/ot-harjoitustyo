@@ -4,7 +4,7 @@
       Pelaaja "1" --> "1" Pelinappula
       Pelinappula "*" --> "1" Ruutu
       Lauta "1" --> "*" Ruutu
-      Ruutu "1" --> "1" Aloitusruutu
+      Ruutu <|-- Aloitusruutu
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
