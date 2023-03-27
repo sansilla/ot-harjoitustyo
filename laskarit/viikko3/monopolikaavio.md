@@ -7,9 +7,15 @@
       Ruutu <|-- Aloitusruutu
       Ruutu <|-- Vankila
       Ruutu <|-- SattumaYhteismaa
+      Ruutu <|-- AsematLaitokset
+      Ruutu <|-- NormaalitKadut
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
+      }
+      class AsematLaitokset{
+      }
+      class NormaalitKadut{
       }
       class Aloitusruutu{
       }
