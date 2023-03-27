@@ -14,7 +14,7 @@
       }
       class Vankila{
       }
-      class Sattuma&yhteismaa
+      class Sattuma_yhteismaa
       }
       class Lauta{
           1 kpl
