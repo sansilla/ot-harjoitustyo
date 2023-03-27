@@ -5,10 +5,6 @@
       Pelinappula "*" --> "1" Ruutu
       Lauta "1" --> "*" Ruutu
       Ruutu <|-- Aloitusruutu
-      Ruutu <|-- Vankila
-      Ruutu <|-- Sattuma&yhteismaa
-      Ruutu <|-- Asemat&laitokset
-      Ruutu <|-- Normaalit_kadut
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
