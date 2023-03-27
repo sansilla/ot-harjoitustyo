@@ -11,7 +11,7 @@
       Ruutu <|-- AsematLaitokset
       Ruutu <|-- NormaalitKadut
       Talo "*" --> "1" NormaalitKadut
-      Hotelli "1" --> "1" Normaalitkadut
+      Hotelli "1" --> "1" NormaalitKadut
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
