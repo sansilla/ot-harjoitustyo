@@ -14,6 +14,8 @@
       }
       class Vankila{
       }
+      class Sattuma&yhteismaa
+      }
       class Lauta{
           1 kpl
           sis. ruudut
