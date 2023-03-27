@@ -9,7 +9,6 @@
       Ruutu <|-- Sattuma&yhteismaa
       Ruutu <|-- Asemat&laitokset
       Ruutu <|-- Normaalit_kadut
-
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
