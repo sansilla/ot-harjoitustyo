@@ -6,10 +6,12 @@
       Lauta "1" --> "*" Ruutu
       Ruutu <|-- Aloitusruutu
       Ruutu <|-- Vankila
-      Ruutu <|-- SattumaYhteismaa
+      Ruutu <|-- Sattuma
+      Ruutu <|-- Yhteismaa
       Ruutu <|-- AsematLaitokset
       Ruutu <|-- NormaalitKadut
       Talo "*" --> "1" NormaalitKadut
+      Hotelli "1" --> "1" Normaalitkadut
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
@@ -25,7 +27,9 @@
       }
       class Vankila{
       }
-      class SattumaYhteismaa{
+      class Sattuma{
+      }
+      class Yhteismaa{
       }
       class Lauta{
           1 kpl
