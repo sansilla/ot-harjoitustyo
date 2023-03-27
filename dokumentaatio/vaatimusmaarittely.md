@@ -17,6 +17,14 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 
 - Järjestelmään voi kirjata päivän säähavainnot
 
+- Päivämäärä tulee automaattisesti järjestelmästä
+
+- Merkkausten jälkeen voi kirjautua ulos järjestelmästä
+
+*Mahdolliset laajennukset:*
+
+- Omat "kirjausboksit" joka kohdalle:
+
   ¤ Päivämäärä
   
   ¤ Lämpötila
@@ -31,4 +39,3 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 
 - Mahdollinen lämpötilakäyrä?
 
-- Merkkausten jälkeen voi kirjautua ulos järjestelmästä
