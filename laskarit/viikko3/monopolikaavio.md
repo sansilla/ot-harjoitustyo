@@ -8,17 +8,9 @@
       class Ruutu{
           seuraava ruutu tiedossa
           40 kpl
+      }
       class Aloitusruutu{
       }
-      class Vankila{
-      }
-      class Sattuma&Yhteismaa{
-      }
-      class Asemat&laitokset{
-      }
-      class Normaalit_kadut{
-      }
-
       class Lauta{
           1 kpl
           sis. ruudut
