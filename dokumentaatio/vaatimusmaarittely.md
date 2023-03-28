@@ -13,8 +13,6 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 
   ¤ Käyttäjän tunnuksella jotain vaatimuksia
 
-- Järjestelmään kirjaudutan salasanalla
-
 - Järjestelmään voi kirjata päivän säähavainnot
 
 - Päivämäärä tulee automaattisesti järjestelmästä
@@ -38,4 +36,6 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
     - Mahdollisesti tuulenvoimakkuuden kirjaus?
 
 - Mahdollinen lämpötilakäyrä?
+
+- Ehkä mahdollisuus kirjautua salasanalla?
 
