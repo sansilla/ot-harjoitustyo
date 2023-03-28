@@ -2,6 +2,7 @@ import os
 import sqlite3
 import datetime
 
+db = sqlite3.connect("weatherdiary.db")
 db.isolation_level = None
 
 def create_tables():
