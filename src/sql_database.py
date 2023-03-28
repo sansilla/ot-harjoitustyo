@@ -2,7 +2,7 @@ import os
 import sqlite3
 import datetime
 
-db = sqlite3.connect("weatherdiary.db")
+db = sqlite3.connect("weatherdiary.db") #Pitäisikö tietokantayhteys muodostaa täysin omassa moduulissaan?
 db.isolation_level = None
 
 def create_tables():
