@@ -1,11 +1,12 @@
 import os
 import sqlite3
+import datetime
 
 db.isolation_level = None
 
 def create_tables():
     db.execute("CREATE TABLE Users_table (id INTEGER PRIMARY KEY, name TEXT)")
-    db.execute("CREATE TABLE Notes_table (id INTEGER PRIMATY KEY, user_id INTEGER REFERENCES Users_table, note TEXT, date DATETIME)")
+    db.execute("CREATE TABLE Notes_table (id INTEGER PRIMATY KEY, user_id INTEGER REFERENCES Users_table, date DATETIME, note TEXT)")
 
 def show_users():
     users = db.execute("SELECT name FROM Users_table ORDER BY name").fetchall()
@@ -13,7 +14,7 @@ def show_users():
         print(user)
 
 def create_user(name):
-    name = input("Käyttäjänimi: ")
+    name = input("Luo käyttäjänimi: ")
     db.execute("INSERT INTO Users_table (name) VALUES (?)", [name])
     print("Uusi käyttäjä luotu!")
 
@@ -22,6 +23,9 @@ def show_all(name):
     for note in notes:
         print(note)
 
-def new_note(note):
+def new_note(id, date, note):
+    name = input("Käyttäjänimi: ")
+    date = datetime.now()
     note = input("Päivän havainnot: ")
-    db.execute("")
+    id = db.execute(f"SELECT id FROM Users_table WHERE name = '{name}'")
+    db.execute("INSERT INTO Notes_table (id, date, note) VALUES (?, ?, ?)", [id, date, note])
