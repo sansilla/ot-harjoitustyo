@@ -19,3 +19,11 @@ Päivä 28.3.
 Käytetty aika: 3h
 
 Mitä tein: tietokanta mukaan projektiin, tietokantaa käyttävien käskyjen laatiminen
+
+-----------------------------------------------------------------------------------------------
+
+Päivä: 31.3.
+
+Käytetty aika: 1,5h
+
+Mitä tein: toiminnallisuudet oikeisiin tiedostoihin
