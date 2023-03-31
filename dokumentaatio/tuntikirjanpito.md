@@ -26,4 +26,4 @@ Päivä: 31.3.
 
 Käytetty aika: 1,5h
 
-Mitä tein: toiminnallisuudet oikeisiin tiedostoihin
+Mitä tein: käyttäjän luominen, toiminnallisuudet oikeisiin tiedostoihin
