@@ -1,4 +1,5 @@
 from base.diary import Diary
+from sql_database import get_some_service
 
 class Note:
     def __init__(self):
