@@ -1,14 +1,21 @@
 from base.user import User
-import sql_database
+from sql_database import get_some_service
 
 class AboutUsers:
-    def __init__(self):
-        #konstruktoriin jotain
+    def __init__(self, service):
+        self._service = service
 
-    #def show_users(self):
-        #näyttää listan käyttäjistä
-        # ! ! SIIRRETTY DATABASE-OSIOON ! !
+    def show_users(self):
+        cursor = self._service.cursor()
+        users = cursor.execute("SELECT name FROM Users_table ORDER BY name").fetchall()
+        return users
 
-    #def create_user(self, user):
-        #luo uuden käyttäjän
-        # ! ! SIIRRETTY DATABASE -OSIOON ! !
+    def create_user(self, name):
+        cursor = self._service.cursor()
+        #name = input("Luo käyttäjänimi: ")
+        cursor.execute("INSERT INTO Users_table (name) VALUES (?)", [name])
+        #print("Uusi käyttäjä luotu!")
+        self._service.commit()
+        return name
+    
+create_user = AboutUsers(get_some_service())
