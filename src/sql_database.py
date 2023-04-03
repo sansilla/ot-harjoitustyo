@@ -1,4 +1,4 @@
-#import os
+import os
 import sqlite3
 from config import DATABASE_FILE_PATH
 

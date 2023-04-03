@@ -8,5 +8,8 @@ try:
 except FileNotFoundError:
     pass
 
+NOTES_FILENAME = os.getenv("NOTES_FILENAME") or "notes.csv"
+NOTES_FILE_PATH = os.path.join(dirname, "..", "data", NOTES_FILENAME)
+
 DATABASE_FILENAME = os.getenv("DATABASE_FILENAME") or "database.sqlite"
 DATABASE_FILE_PATH = os.path.join(dirname, "..", "data", DATABASE_FILENAME)
