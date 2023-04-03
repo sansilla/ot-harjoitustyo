@@ -7,10 +7,10 @@ class AboutUsers:
 
     def show_users(self):
         cursor = self._service.cursor()
-        users = cursor.execute("SELECT name FROM Users_table ORDER BY name").fetchall()
+        users = cursor.execute("SELECT name FROM Users_table").fetchall() #ORDER BY name
         return users
 
-    def create_user(self, name):
+    def create(self, name):
         cursor = self._service.cursor()
         #name = input("Luo käyttäjänimi: ")
         cursor.execute("INSERT INTO Users_table (name) VALUES (?)", [name])
