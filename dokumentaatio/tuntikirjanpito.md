@@ -1,3 +1,7 @@
+**Työhön käytetyt tunnit yhteensä: 8,5h**
+
+-----------------------------------------------------------------------------------------------
+
 Päivä: 22.3.
 
 Käytetty aika: 1h
@@ -27,3 +31,11 @@ Päivä: 31.3.
 Käytetty aika: 1,5h
 
 Mitä tein: käyttäjän luominen, toiminnallisuudet oikeisiin tiedostoihin
+
+-----------------------------------------------------------------------------------------------
+
+Päivä: 3.4.
+
+Käytetty aika: 1h
+
+Mitä tein: testauksen aloittaminen (tässä vielä ongelmia)
