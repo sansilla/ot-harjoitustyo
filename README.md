@@ -8,6 +8,6 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 
 - [Työaikakirjanpito](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
 
-- [Changelog]
+- [Changelog](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
 - [Käyttöohje]
