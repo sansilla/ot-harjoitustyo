@@ -4,6 +4,10 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 
 **Dokumentaatio**
 
--[Vaatimusmäärittely](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
--[Työaikakirjanpito](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+- [Vaatimusmäärittely](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
+- [Työaikakirjanpito](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/tuntikirjanpito.md)
+
+- [Changelog]
+
+- [Käyttöohje]
