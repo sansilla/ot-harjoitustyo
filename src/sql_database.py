@@ -9,7 +9,6 @@ def get_some_service():
 
 #import datetime
 
-#db = sqlite3.connect("weatherdiary.db") #Pitäisikö tietokantayhteys muodostaa täysin omassa moduulissaan?
 #db.isolation_level = None
 
 #def show_all(name):
