@@ -7,7 +7,7 @@ try:
     load_dotenv(dotenv_path=os.path.join(dirname, "..", ".env"))
 except FileNotFoundError:
     pass
-
+print()
 NOTES_FILENAME = os.getenv("NOTES_FILENAME") or "notes.csv"
 NOTES_FILE_PATH = os.path.join(dirname, "..", "data", NOTES_FILENAME)
 
