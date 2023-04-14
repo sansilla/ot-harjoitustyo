@@ -3,7 +3,7 @@ from working.create_user import create_user
 from base.user import User
 
 class TestAboutUsers(unittest.TestCase):
-    def detUp(self):
+    def setUp(self):
         create_user.delete_all()
         self.user_kekkonen = User("kekkonen")
 
