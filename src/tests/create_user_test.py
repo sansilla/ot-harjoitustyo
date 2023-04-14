@@ -1,7 +1,7 @@
 import unittest
 from working.create_user import create_user
 from base.user import User
-from initialize_database import initialize_sql_database
+#from initialize_database import initialize_sql_database
 
 class TestAboutUsers(unittest.TestCase):
     def setUp(self):
