@@ -44,6 +44,6 @@ Mitä tein: testauksen aloittaminen (tässä vielä ongelmia)
 
 Päivä: 14.4.
 
-Käytetty aika: 1,5h
+Käytetty aika: 2,5h
 
-Mitä tein: korjauksia tiedostoihin, ensimmäinen tasks lisätty
+Mitä tein: korjauksia tiedostoihin, ensimmäinen tasks lisätty, unittest toimivaksi
