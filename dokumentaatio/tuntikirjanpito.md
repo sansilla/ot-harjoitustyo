@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 8,5h**
+**Työhön käytetyt tunnit yhteensä: 10h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -39,3 +39,11 @@ Päivä: 3.4.
 Käytetty aika: 1h
 
 Mitä tein: testauksen aloittaminen (tässä vielä ongelmia)
+
+-----------------------------------------------------------------------------------------------
+
+Päivä: 14.4.
+
+Käytetty aika: 1,5h
+
+Mitä tein: korjauksia tiedostoihin, ensimmäinen tasks lisätty
