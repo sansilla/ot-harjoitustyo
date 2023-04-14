@@ -4,7 +4,7 @@ from base.user import User
 
 class TestAboutUsers(unittest.TestCase):
     def setUp(self):
-        create_user.delete_all()
+        create_user.delete()
         self.user_kekkonen = User("kekkonen")
 
     def test_create(self):
