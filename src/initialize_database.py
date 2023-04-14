@@ -13,6 +13,7 @@ def create_tables(service):
 
 def initialize_sql_database():
     service = get_some_service()
+    drop(service)
     create_tables(service)
 
 if __name__ == "__main__":
