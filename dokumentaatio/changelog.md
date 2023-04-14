@@ -10,3 +10,4 @@
 - Lisätty data-kansio
 - Lisätty .env -tiedostoon polut
 - Testit eivät enää herjaa tietokannan avaamisesta, mutta eivät löydä "Users_table" -taulukkoa
+- Unittest toimii!
