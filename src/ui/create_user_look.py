@@ -1,5 +1,6 @@
 from tkinter import ttk, StringVar, constants
-from services #importtaa asioita: UsernameAlreadyExistsError
+from services  # importtaa asioita: UsernameAlreadyExistsError
+
 
 class CreateUserLook:
     def __init__(self, root, handle_creating, handle_showing_login):
@@ -25,11 +26,11 @@ class CreateUserLook:
         if len(username) == 0:
             self._show_error("Syötä käyttäjänimi")
             return
-        
+
         try:
             # services -kansiosta asiaa
             self._handle_creating()
-        except UsernameAlreadyExistsError: #tämä vielä luomatta
+        except UsernameAlreadyExistsError:  # tämä vielä luomatta
             self._show_error(f"Käyttäjänimi {username} on jo olemassa")
 
     def _show_error(self, message):
