@@ -20,8 +20,6 @@ class Note:
 
     def _write(self, notes):
         self._
-        # näyttää kaikki merkinnät
-        # ! ! SIIRRETTY DATABASE -OSIOON ! !
 
     def _read(self):
         notes = []
