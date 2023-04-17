@@ -2,7 +2,6 @@ from base.diary import Diary
 from base.user import User
 
 from working.create_note import (create_note as default_note_re)
-# jatka create_note tiedostoa, siellä ei ole vielä kaikkea tarvittavaa
 
 from working.create_user import (create_user as default_user_re)
 
