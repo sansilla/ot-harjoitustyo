@@ -4,9 +4,9 @@ from config import NOTES_FILE_PATH
 
 
 class Note:
-    def __init__(self):
-        # jotain asiaa tänne
-
+    def __init__(self, file_path):
+        self._file_path = file_path
+        
         # def new_note(self):
         # kirjaa uusi merkintä
         # ! ! SIIRRETTY DATABASE -OSIOON ! !
