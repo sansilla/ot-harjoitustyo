@@ -47,3 +47,13 @@ Päivä: 14.4.
 Käytetty aika: 2,5h
 
 Mitä tein: korjauksia tiedostoihin, ensimmäinen tasks lisätty, unittest toimivaksi
+
+-----------------------------------------------------------------------------------------------
+
+Päivä: 17.4.
+
+Käytetty aika: 2h
+
+Mitä tein: pylint asennettu, korjauksia aiempiin tiedostoihin, lisää taskeja
+
+-----------------------------------------------------------------------------------------------
