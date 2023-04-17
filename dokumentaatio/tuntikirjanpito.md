@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 13h**
+**Työhön käytetyt tunnit yhteensä: 14,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -52,8 +52,8 @@ Mitä tein: korjauksia tiedostoihin, ensimmäinen tasks lisätty, unittest toimi
 
 Päivä: 17.4.
 
-Käytetty aika: 2h
+Käytetty aika: 3,5h
 
-Mitä tein: pylint asennettu, korjauksia aiempiin tiedostoihin, lisää taskeja
+Mitä tein: pylint asennettu, korjauksia ja lisäyksiä aiempiin tiedostoihin, lisää taskeja
 
 -----------------------------------------------------------------------------------------------
