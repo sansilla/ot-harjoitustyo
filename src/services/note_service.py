@@ -18,4 +18,6 @@ class NoteService:
         self._create_note = create_note
         self._create_user = create_user
 
-    def diary_note(self, )
+    def diary_note(self, note):
+        diary = Diary(note=note, user=self._user)
+        return self._create_note.new_note(diary)

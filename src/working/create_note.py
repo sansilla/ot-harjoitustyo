@@ -1,6 +1,6 @@
 from base.diary import Diary
 from sql_database import get_some_service
-from config import ???
+from config import NOTES_FILE_PATH
 
 
 class Note:
@@ -14,3 +14,6 @@ class Note:
         # def show_all(self):
         # näyttää kaikki merkinnät
         # ! ! SIIRRETTY DATABASE -OSIOON ! !
+
+
+create_note = Note(NOTES_FILE_PATH)
