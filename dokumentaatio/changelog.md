@@ -9,5 +9,5 @@
 
 - Lisätty data-kansio
 - Lisätty .env -tiedostoon polut
-- Testit eivät enää herjaa tietokannan avaamisesta, mutta eivät löydä "Users_table" -taulukkoa
-- Unittest toimii!
+- Unittest toimii (jee!), mutta antaa samalla jonkin varoituksen
+- Muokattu jo olemassa olleita tiedostoja pylintin ilmoittamista virheistä
