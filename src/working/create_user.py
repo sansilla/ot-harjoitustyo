@@ -24,4 +24,3 @@ class AboutUsers:
         self._service.commit()
 
 create_user = AboutUsers(get_some_service())
-
