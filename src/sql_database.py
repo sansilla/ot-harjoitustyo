@@ -11,7 +11,8 @@ def get_some_service():
 #db.isolation_level = None
 
 #def show_all(name):
-    #notes = db.execute(f"SELECT note FROM Notes_table, Users_table WHERE Notes_table.user_id = Users_table.id AND Users_table.name = '{name}'").fetchall()
+    #notes = db.execute(f"SELECT note FROM Notes_table, Users_table
+    # WHERE Notes_table.user_id = Users_table.id AND Users_table.name = '{name}'").fetchall()
     #for note in notes:
         #print(note)
 

@@ -17,10 +17,11 @@ class AboutUsers:
         #print("Uusi käyttäjä luotu!")
         self._service.commit()
         return name
-    
+
     def delete(self):
         cursor = self._service.cursor()
         cursor.execute("DELETE FROM users_table")
         self._service.commit()
-    
+
 create_user = AboutUsers(get_some_service())
+

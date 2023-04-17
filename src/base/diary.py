@@ -5,3 +5,4 @@ class Diary:
         self.note = note
         self.date = date #sovellus asettaisi tämän automaattisesti uuteen kirjaukseen
         self.user = user
+
