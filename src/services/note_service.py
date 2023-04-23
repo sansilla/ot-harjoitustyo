@@ -23,3 +23,34 @@ class NoteService:
     def diary_note(self, note):
         diary = Diary(note=note, user=self._user)
         return self._create_note.new_note(diary)
+    
+    def login(self, username):
+        user = self._create_user.find_by_name(username)
+        if not user:
+            raise InvalidCredentialsError("Virheellinen käyttäjänimi")
+        self._user = user
+        return user
+    
+    def see_current_user(self):
+        return self._user
+    
+    def see_users(self):
+        return self._create_user.show_users()
+    
+    def logout(self):
+        self._user = None
+
+    def create_new_user(self, username, login=True)
+        user_exists = self._create_user.find_by_name(username)
+
+        if user_exists:
+            raise UsernameAlreadyExistsError(f"Käyttäjänimi on jo olemassa")
+        
+        user = self._create_user.create(User(username))
+
+        if login:
+            self._user = user
+
+        return user
+    
+note_service = NoteService()
