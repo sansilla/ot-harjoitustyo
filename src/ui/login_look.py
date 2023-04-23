@@ -1,6 +1,7 @@
 from tkinter import ttk, StringVar, constants
 from services.note_service import note_service, InvalidCredentialsError
 
+
 class LoginLook:
     def __init__(self, root, handle_login, handle_create_user_look):
         self._root = root
@@ -49,15 +50,18 @@ class LoginLook:
 
         self._error_variable = StringVar(self._frame)
 
-        self._error_label = ttk.Label(master=self._frame, textvariable=self._error_variable, foreground="red")
+        self._error_label = ttk.Label(
+            master=self._frame, textvariable=self._error_variable, foreground="red")
 
         self._error_label.grid(padx=5, pady=5)
 
         self._do_username_field()
 
-        login_button = ttk.Button(master=self._frame, text="Kirjaudu sisään", command=self._do_login)
+        login_button = ttk.Button(
+            master=self._frame, text="Kirjaudu sisään", command=self._do_login)
 
-        create_user_button = ttk.Button(master=self._frame, text="Luo uusi käyttäjä", command=self._handle_create_user_look)
+        create_user_button = ttk.Button(
+            master=self._frame, text="Luo uusi käyttäjä", command=self._handle_create_user_look)
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
 
