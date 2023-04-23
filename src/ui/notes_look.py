@@ -1,6 +1,7 @@
 from tkinter import ttk, constants
 from services.note_service import note_service
 
+
 class NoteListView:
     def __init__(self, root, notes):
         self._root = root
@@ -29,6 +30,7 @@ class NoteListView:
 
         thing_frame.grid_columnconfigure(0, weight=1)
         thing_frame.pack(fill=constants.X)
+
 
 class NotesView:
     def __init__(self, root, handle_logout):
@@ -61,16 +63,19 @@ class NotesView:
         self._note_list_look = NoteListView(self._note_list_frame, notes)
 
         self._note_list_look.pack()
-        
+
     def _initialize_header(self):
-        user_label = ttk.Label(master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user}")
+        user_label = ttk.Label(
+            master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user}")
         # miksi ylempi lauseke ei toimi????
-        
-        logout_button = ttk.Button(master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)
+
+        logout_button = ttk.Button(
+            master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)
 
         user_label.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
 
-        logout_button.grid(row=0, column=1, padx=5, pady=5, sticky=constants.EW)
+        logout_button.grid(row=0, column=1, padx=5,
+                           pady=5, sticky=constants.EW)
 
     def _handle_create_note(self):
         note_inside = self._create_note_entry.get()
@@ -83,11 +88,14 @@ class NotesView:
     def _initialize_footer(self):
         self._create_note_entry = ttk.Entry(master=self._frame)
 
-        create_note_button = ttk.Button(master=self._frame, text="Kirjaa", command=self._handle_create_note)
+        create_note_button = ttk.Button(
+            master=self._frame, text="Kirjaa", command=self._handle_create_note)
 
-        self._create_note_entry.grid(row=2, column=0, padx=5, pady=5, sticky=constants.EW)
+        self._create_note_entry.grid(
+            row=2, column=0, padx=5, pady=5, sticky=constants.EW)
 
-        create_note_button.grid(row=2, column=1, padx=5, pady=5, sticky=constants.EW)
+        create_note_button.grid(row=2, column=1, padx=5,
+                                pady=5, sticky=constants.EW)
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -97,7 +105,8 @@ class NotesView:
         self._initialize_note_list()
         self._initialize_footer()
 
-        self._note_list_frame.grid(row=1, column=0, columnspan=2, sticky=constants.EW)
+        self._note_list_frame.grid(
+            row=1, column=0, columnspan=2, sticky=constants.EW)
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
         self._frame.grid_columnconfigure(1, weight=0)

@@ -21,15 +21,15 @@ class NoteService:
         self._create_user = create_user
 
     def diary_note(self, note):
-        #uusi kirjaus
+        # uusi kirjaus
         diary = Diary(note=note, user=self._user)
         return self._create_note.new_note(diary)
-    
+
     def get_notes(self):
         # näyttää notet
         if not self._user:
             return []
-        
+
         notes = self._create_note.find_by_username(self._user.name)
 
         return list(notes)

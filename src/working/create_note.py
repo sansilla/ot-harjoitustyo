@@ -17,10 +17,11 @@ class Note:
 
     def show_all(self):
         return self._read()
-    
+
     def find_by_username(self, username):
         notes = self.show_all
-        user_notes = filter(lambda diary: diary.user and diary.user.name == username, notes)
+        user_notes = filter(
+            lambda diary: diary.user and diary.user.name == username, notes)
         # ei varmuutta ylläolevan oikeellisuudesta!
         return list(user_notes)
 

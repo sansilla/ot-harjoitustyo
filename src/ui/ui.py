@@ -28,7 +28,6 @@ class UI:
         self._current_look = NotesView(self._root, self._show_login_look)
 
         self._current_look.pack()
-        
 
     def _show_create_user_look(self):
         self._hide_current_look()
