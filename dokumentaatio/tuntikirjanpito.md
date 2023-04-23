@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 14,5h**
+**Työhön käytetyt tunnit yhteensä: 16,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -57,3 +57,12 @@ Käytetty aika: 3,5h
 Mitä tein: pylint asennettu, korjauksia ja lisäyksiä aiempiin tiedostoihin, lisää taskeja
 
 -----------------------------------------------------------------------------------------------
+
+Päivä: 23.4.
+
+Käytetty aika: 2h
+
+Mitä tein: ui kansion laajennusta, aiempien tiedostojen parantelua
+
+-----------------------------------------------------------------------------------------------
+
