@@ -1,5 +1,5 @@
 from tkinter import ttk, StringVar, constants
-from services import UsernameAlreadyExistsError #ja joku toinen
+from services import UsernameAlreadyExistsError  # ja joku toinen
 
 
 class CreateUserLook:
@@ -51,15 +51,18 @@ class CreateUserLook:
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
 
-        self._error_label = ttk.Label(master=self._frame, text=self._error_variable, foreground="red")
+        self._error_label = ttk.Label(
+            master=self._frame, text=self._error_variable, foreground="red")
 
         self._error_label.grid(padx=5, pady=5)
 
         self._initialize_name_field()
 
-        create_user_button = ttk.Button(master=self._frame, text="Luo uusi", command=self._create_user_handler)
+        create_user_button = ttk.Button(
+            master=self._frame, text="Luo uusi", command=self._create_user_handler)
 
-        login_button = ttk.Button(master=self._frame, text="Kirjaudu sisään", command=self._handle_showing_login)
+        login_button = ttk.Button(
+            master=self._frame, text="Kirjaudu sisään", command=self._handle_showing_login)
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
 
