@@ -1,5 +1,5 @@
 from tkinter import ttk, StringVar, constants
-from services import UsernameAlreadyExistsError  # ja joku toinen
+from services.note_service import UsernameAlreadyExistsError  # ja joku toinen
 
 
 class CreateUserLook:
@@ -63,12 +63,12 @@ class CreateUserLook:
         create_user_button = ttk.Button(
             master=self._frame, text="Luo uusi", command=self._create_user_handler)
 
-        login_button = ttk.Button(
-            master=self._frame, text="Kirjaudu sisään", command=self._handle_showing_login)
+        #login_button = ttk.Button(
+            #master=self._frame, text="Kirjaudu sisään", command=self._handle_showing_login)
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
 
         create_user_button.grid(padx=5, pady=5, sticky=constants.EW)
-        login_button.grid(padx=5, pady=5, sticky=constants.EW)
+        #login_button.grid(padx=5, pady=5, sticky=constants.EW)
 
         self._hide_error()
