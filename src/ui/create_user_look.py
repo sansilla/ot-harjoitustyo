@@ -39,3 +39,31 @@ class CreateUserLook:
 
     def _hide_error(self):
         self._error_label.grid_remove()
+
+    def _initialize_name_field(self):
+        username_label = ttk.Label(master=self._frame, text="Käyttäjänimi")
+
+        self._username_entry = ttk.Entry(master=self._frame)
+
+        username_label.grid(padx=5, pady=5, sticky=constants.W)
+        self._username_entry.grid(padx=5, pady=5, sticky=constants.EW)
+
+    def _initialize(self):
+        self._frame = ttk.Frame(master=self._root)
+
+        self._error_label = ttk.Label(master=self._frame, text=self._error_variable, foreground="red")
+
+        self._error_label.grid(padx=5, pady=5)
+
+        self._initialize_name_field()
+
+        create_user_button = ttk.Button(master=self._frame, text="Luo uusi", command=self._create_user_handler)
+
+        login_button = ttk.Button(master=self._frame, text="Kirjaudu sisään", command=self._handle_showing_login)
+
+        self._frame.grid_columnconfigure(0, weight=1, minsize=400)
+
+        create_user_button.grid(padx=5, pady=5, sticky=constants.EW)
+        login_button.grid(padx=5, pady=5, sticky=constants.EW)
+
+        self._hide_error()
