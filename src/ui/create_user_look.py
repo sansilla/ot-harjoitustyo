@@ -61,14 +61,13 @@ class CreateUserLook:
         self._initialize_name_field()
 
         create_user_button = ttk.Button(
-            master=self._frame, text="Luo uusi", command=self._create_user_handler)
+            master=self._frame, text="Luo uusi ja kirjaudu", command=self._create_user_handler)
 
-        # login_button = ttk.Button(
-        # master=self._frame, text="Kirjaudu sisään", command=self._handle_showing_login)
+        #login_button = ttk.Button(master=self._frame, text="Kirjaudu uudella käyttäjällä sisään", command=self._handle_showing_login)
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
 
         create_user_button.grid(padx=5, pady=5, sticky=constants.EW)
-        # login_button.grid(padx=5, pady=5, sticky=constants.EW)
+        #login_button.grid(padx=5, pady=5, sticky=constants.EW)
 
         self._hide_error()

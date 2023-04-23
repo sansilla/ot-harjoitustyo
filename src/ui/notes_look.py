@@ -63,8 +63,9 @@ class NotesView:
         self._note_list_look.pack()
         
     def _initialize_header(self):
-        user_label = ttk.Label(master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user.name}")
-
+        user_label = ttk.Label(master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user}")
+        # miksi ylempi lauseke ei toimi????
+        
         logout_button = ttk.Button(master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)
 
         user_label.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
