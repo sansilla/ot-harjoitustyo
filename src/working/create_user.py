@@ -11,7 +11,7 @@ class AboutUsers:
         users = cursor.execute(
             "SELECT name FROM users_table").fetchall()  # ORDER BY name
         return users
-    
+
     def find_by_name(self, username):
         cursor = self._service.cursor()
         cursor.execute("SELECT * FROM users_table WHERE name = ?", [username])
