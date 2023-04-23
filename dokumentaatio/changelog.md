@@ -11,3 +11,8 @@
 - Lisätty .env -tiedostoon polut
 - Unittest toimii (jee!), mutta antaa samalla jonkin varoituksen
 - Muokattu jo olemassa olleita tiedostoja pylintin ilmoittamista virheistä
+
+## Viikko 5
+
+- Kirjautumisnäkymän saa viimein auki! (voi kirjautua sisään tai luoda uuden käyttäjän)
+- Tasks.py -tiedostoa korjattu ohjeen mukaan, mutta coverage_raport antaa edelleen varoituksen
