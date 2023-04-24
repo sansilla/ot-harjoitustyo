@@ -18,3 +18,15 @@ Jotta ohjelma toimii, täytyy asentaa riippuvuudet. Käytetään komentoa:
 Ohjelma käynnistyy komennolla:
 
 - **poetry run invoke start**
+
+## Sisäänkirjautuminen ##
+
+- Ohje tähän
+
+## Uusi käyttäjä ##
+
+- Ohje tähän
+
+## Säämuistiinpanon luominen ##
+
+#Ei toimi vielä
