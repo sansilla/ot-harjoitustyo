@@ -10,7 +10,7 @@ Jos ohjelman tallennuksessa käytettävien tiedostojen nimiä haluaa konfiguroid
 
 Jotta ohjelma toimii, täytyy asentaa riippuvuudet. Käytetään komentoa:
 
-   **poetry install**
+  **poetry install**
 
 #Tarvitaanko alustustoimenpiteitä?
 
