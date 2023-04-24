@@ -1,6 +1,6 @@
 ## Käyttöohje ##
 
-Lataa Release-linkin kautta projektin uusin lähdekoodi Source code -kohdalta.
+Lataa Release-linkin kautta projektin uusin lähdekoodi *Source code*-kohdasta.
 
 Jos ohjelman tallennuksessa käytettävien tiedostojen nimiä haluaa konfiguroida, löytyvät ne *.env*-tiedostosta. Jos tiedostoja ei vielä ole *data*-hakemistossa, ne tehdään hakemistoon automaattisesti.
 
@@ -9,9 +9,11 @@ Jos ohjelman tallennuksessa käytettävien tiedostojen nimiä haluaa konfiguroid
 ## Käynnistys ##
 
 Jotta ohjelma toimii, täytyy asentaa riippuvuudet. Käytetään komentoa:
-    **poetry install**
+
+   **poetry install**
 
 #Tarvitaanko alustustoimenpiteitä?
 
 Ohjelma käynnistyy komennolla:
-    **poetry run invoke start**
+
+   **poetry run invoke start**
