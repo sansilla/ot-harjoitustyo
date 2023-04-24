@@ -10,6 +10,6 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 
 - [Changelog](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/changelog.md)
 
-- [Käyttöohje]
+- [Käyttöohje](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
 - [Release](https://github.com/sansilla/ot-harjoitustyo/releases/tag/viikko5)
