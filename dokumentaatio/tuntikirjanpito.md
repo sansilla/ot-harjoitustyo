@@ -66,3 +66,8 @@ Mitä tein: ui kansion laajennusta, aiempien tiedostojen parantelua
 
 -----------------------------------------------------------------------------------------------
 
+Päivä: 24.4.
+
+Käytetty aika: 0,5h
+
+Mitä tein: käyttöohjeen lisääminen, release
