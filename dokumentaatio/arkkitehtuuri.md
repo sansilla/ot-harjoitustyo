@@ -7,5 +7,6 @@
           jeejee
       }
       class User{
+          username/käyttäjänimi
       }
 ```
