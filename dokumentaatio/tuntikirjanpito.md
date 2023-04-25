@@ -73,3 +73,11 @@ Käytetty aika: 0,5h
 Mitä tein: käyttöohjeen lisääminen, release
 
 -----------------------------------------------------------------------------------------------
+
+Päivä: 25.4.
+
+Käytetty aika: 2h
+
+Mitä tein: arkkitehtuuri, käyttäjälle näkyvien ominaisuuksien korjausta + yleistä parantelua
+
+-----------------------------------------------------------------------------------------------
