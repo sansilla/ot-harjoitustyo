@@ -54,7 +54,7 @@ class NoteService:
         user_exists = self._create_user.find_by_name(username)
 
         if user_exists:
-            raise UsernameAlreadyExistsError(f"Käyttäjänimi on jo olemassa")
+            raise UsernameAlreadyExistsError("Käyttäjänimi on jo olemassa")
 
         user = self._create_user.create(User(username))
 

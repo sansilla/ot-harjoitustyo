@@ -1,5 +1,5 @@
-from base.diary import Diary
 from pathlib import Path
+from base.diary import Diary
 from working.create_user import create_user
 # from sql_database import get_some_service
 from config import NOTES_FILE_PATH

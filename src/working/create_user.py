@@ -20,9 +20,7 @@ class AboutUsers:
 
     def create(self, name):
         cursor = self._service.cursor()
-        # name = input("Luo käyttäjänimi: ")
         cursor.execute("INSERT INTO users_table (name) VALUES (?)", [name])
-        # print("Uusi käyttäjä luotu!")
         self._service.commit()
         return name
 
