@@ -17,3 +17,5 @@ Luokat Note ja Diary toimivat sovelluksen pohjana, ja kuvaavat sovellukseen kirj
           username/käyttäjänimi
       }
 ```
+
+Luokka NoteService hoitaa sovelluksen toiminnallisuuden. Se mahdollistaa käyttöliittymän toiminnan erilaisilla metodeilla.
