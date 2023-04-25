@@ -1,10 +1,12 @@
+jeejee
 
 ```mermaid
  classDiagram
       Note "*" --> "1" User
      
       class Note{
-          jeejee
+          säähavainnot
+          mahd. päivämäärä
       }
       class User{
           username/käyttäjänimi
