@@ -21,28 +21,16 @@ class Note:
         return self._read()
 
     def find_by_username(self, username):
-        notes = self.show_all
-        user_notes = filter(
-            lambda diary: diary.user and diary.user.name == username, notes)
-        # ei varmuutta ylläolevan oikeellisuudesta!
-        return list(user_notes)
+        pass
 
-    def _add(self, note): # pitääköhän tätä korjata
-        print("Kirjataan", note)
-        self._is_file_real()
-
-        with open(self._file_path, "w", encoding="utf-8") as file:
-            line = f"{note}"
-
-            file.write(line+"\n")
+    def _add(self, note):
+        pass
 
     def _is_file_real(self):
         Path(self._file_path).touch()
 
-    def _read(self): # tätä täytyy korjata
-        with open(self._file_path, encoding="utf-8") as file:
-            for row in file:
-                return row
+    def _read(self):
+        pass
 
 
 create_note = Note(NOTES_FILE_PATH)

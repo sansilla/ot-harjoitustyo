@@ -38,7 +38,7 @@ class LoginLook:
         self._error_label.grid_remove()
 
     def _do_username_field(self):
-        username_label = ttk.Label(master=self._frame, text="Käyttäjänimi")
+        username_label = ttk.Label(master=self._frame, text="Käyttäjänimi:")
 
         self._username_entry = ttk.Entry(master=self._frame)
 

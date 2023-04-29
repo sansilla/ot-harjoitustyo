@@ -35,6 +35,7 @@ class NoteService:
         return list(notes)
 
     def login(self, username):
+        #print("login")
         user = self._create_user.find_by_name(username)
         if not user:
             raise InvalidCredentialsError("Virheellinen käyttäjänimi")
