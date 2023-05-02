@@ -9,7 +9,7 @@ Sovelluksen avulla voi ylläpitää päivittäistä havaintopäiväkirjaa päiv�
 Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä".
 
 *Toiminnallisuudet:*
-- Sääpäiväkirjaan voi luoda oman käyttäjän -> osittain tehty
+- Sääpäiväkirjaan voi luoda oman käyttäjän -> *osittain tehty*
 
   ¤ ~~Käyttäjän tunnuksella jotain vaatimuksia~~
 
