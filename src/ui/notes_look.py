@@ -67,7 +67,7 @@ class NotesView:
     def _initialize_header(self):
         user_label = ttk.Label(
             master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user}")
-        # miksi ylempi lauseke ei toimi????
+        # pientä parantelua vailla
 
         logout_button = ttk.Button(
             master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)
