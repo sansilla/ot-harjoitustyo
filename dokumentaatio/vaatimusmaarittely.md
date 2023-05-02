@@ -40,4 +40,3 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 - ~~Ehkä mahdollisuus kirjautua salasanalla?~~
 
 - Laajennukset eivät tule toteutumaan tämän kurssin aikana
-
