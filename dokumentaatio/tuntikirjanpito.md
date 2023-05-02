@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 21h**
+**Työhön käytetyt tunnit yhteensä: 23,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -79,5 +79,13 @@ Päivä: 25.4.
 Käytetty aika: 2h
 
 Mitä tein: arkkitehtuuri, käyttäjälle näkyvien ominaisuuksien korjausta + yleistä parantelua
+
+-----------------------------------------------------------------------------------------------
+
+Päivä: 2.5.
+
+Käytetty aika: 2,5h
+
+Mitä tein: käyttäjälle näkyvien ominaisuksien kanssa taistelu
 
 -----------------------------------------------------------------------------------------------
