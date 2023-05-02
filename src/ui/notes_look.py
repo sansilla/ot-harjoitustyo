@@ -24,7 +24,7 @@ class NoteListView:
 
     def _initialize_note_thing(self, note):
         thing_frame = ttk.Frame(master=self._frame)
-        label = ttk.Label(master=thing_frame, text=note.note)
+        label = ttk.Label(master=thing_frame, text=note)
 
         label.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
 
@@ -82,6 +82,7 @@ class NotesView:
 
         if note_inside:
             note_service.diary_note(note_inside)
+            #note_service.diary_note(note_inside) -- tähän muutos
             self._initialize_note_list()
             self._create_note_entry.delete(0, constants.END)
 

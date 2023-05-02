@@ -18,11 +18,11 @@ class AboutUsers:
         row = cursor.fetchone()
         return row
 
-    def create(self, name):
+    def create(self, user):
         cursor = self._service.cursor()
-        cursor.execute("INSERT INTO users_table (name) VALUES (?)", [name])
+        cursor.execute("INSERT INTO users_table (name) VALUES (?)", (user.name, ))
         self._service.commit()
-        return name
+        return user
 
     def delete(self):
         cursor = self._service.cursor()

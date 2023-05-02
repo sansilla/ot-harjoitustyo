@@ -1,5 +1,5 @@
 from tkinter import ttk, StringVar, constants
-from services.note_service import UsernameAlreadyExistsError  # ja joku toinen
+from services.note_service import UsernameAlreadyExistsError, note_service
 
 
 class CreateUserLook:
@@ -28,7 +28,7 @@ class CreateUserLook:
             return
 
         try:
-            # services -kansiosta asiaa
+            note_service.create_new_user(username)
             self._handle_creating()
         except UsernameAlreadyExistsError:
             self._show_error(f"Käyttäjänimi {username} on jo olemassa")

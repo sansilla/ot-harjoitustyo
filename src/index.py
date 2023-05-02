@@ -6,8 +6,8 @@ def main():
     window = Tk()
     window.title("Sääpäiväkirja")
 
-    ui_view = UI(window)
-    ui_view.start()
+    ui_look = UI(window)
+    ui_look.start()
 
     window.mainloop()
 
