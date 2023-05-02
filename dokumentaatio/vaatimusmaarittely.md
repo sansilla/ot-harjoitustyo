@@ -11,7 +11,7 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 *Toiminnallisuudet:*
 - Sääpäiväkirjaan voi luoda oman käyttäjän -> osittain tehty
 
-  ¤ ~~Käyttäjän tunnuksella jotain vaatimuksia
+  ¤ ~~Käyttäjän tunnuksella jotain vaatimuksia~~
 
 - Järjestelmään voi kirjata päivän säähavainnot
 
