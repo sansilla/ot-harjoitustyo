@@ -16,3 +16,8 @@
 
 - Kirjautumisnäkymän saa viimein auki! (voi kirjautua sisään tai luoda uuden käyttäjän)
 - Tasks.py -tiedostoa korjattu ohjeen mukaan, mutta coverage_raport antaa edelleen varoituksen
+
+## Viikko 6
+
+- Sovellus muistaa jo luodun käyttäjän, ja sillä voi kirjautua uudelleen sisään
+- Jonkin näköinen lista muistiinpanoja näkyy, mutta lista koostuu Diary-olioista (sekä näkyy kaikille käyttäjille samanlaisena)
