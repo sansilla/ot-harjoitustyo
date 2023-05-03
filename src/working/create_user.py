@@ -1,4 +1,4 @@
-from base.user import User
+#from base.user import User
 from sql_database import get_some_service
 
 

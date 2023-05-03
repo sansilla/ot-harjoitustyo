@@ -1,6 +1,6 @@
 from pathlib import Path
-from base.diary import Diary
-from working.create_user import create_user
+#from base.diary import Diary
+#from working.create_user import create_user
 from config import NOTES_FILE_PATH
 
 
@@ -15,17 +15,19 @@ class Note:
         return note
 
     def _add(self, note):
-        with open(self._file_path, "a") as file:
+        self._is_file_real()
+        with open(self._file_path, "a", encoding="UTF-8") as file:
             file.write(str(note.user)+":") #täällä muutos
             file.write(str(note.note)+"\n")
-            print(f"uusi kirjaus:", note)
+            print("uusi kirjaus:", note)
 
     def _is_file_real(self):
         Path(self._file_path).touch()
 
     def _read(self):
+        self._is_file_real()
         list1 = []
-        with open(self._file_path) as file:
+        with open(self._file_path, encoding="UTF-8") as file:
             for line in file:
                 list1.append(str(line))
         #print(list1)
