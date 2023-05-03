@@ -21,3 +21,8 @@
 
 - Sovellus muistaa jo luodun käyttäjän, ja sillä voi kirjautua uudelleen sisään
 - Jonkin näköinen lista muistiinpanoja näkyy, mutta lista koostuu Diary-olioista (sekä näkyy kaikille käyttäjille samanlaisena)
+
+## Viikko 7
+
+- Muistiinpanot näkyvät käyttäjälle (myös muiden käyttäjien tekemät)
+- Sovellus näyttää (kirjautumistavasta riippuen hieman poikkeavasti) kuka sovellukseen on kirjautunut
