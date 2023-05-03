@@ -22,7 +22,7 @@ class AboutUsers:
         cursor = self._service.cursor()
         cursor.execute("INSERT INTO users_table (name) VALUES (?)", (user.name, ))
         self._service.commit()
-        return user
+        return user.name
 
     def delete(self):
         cursor = self._service.cursor()
