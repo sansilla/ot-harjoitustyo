@@ -9,14 +9,14 @@ Sovelluksen avulla voi ylläpitää päivittäistä havaintopäiväkirjaa päiv�
 Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä".
 
 *Toiminnallisuudet:*
-- Sääpäiväkirjaan voi luoda oman käyttäjän -> **osittain tehty**
+- Sääpäiväkirjaan voi luoda oman käyttäjän -> **tehty**
 
   ¤ ~~Käyttäjän tunnuksella jotain vaatimuksia~~
 
-- Järjestelmään voi kirjata päivän säähavainnot -> **kirjoittaa kyllä voi, mutta teksti ei tule näkyviin ":D"**
+- Järjestelmään voi kirjata päivän säähavainnot -> **tehty**
 
-- Päivämäärä tulee automaattisesti järjestelmästä
-
+- ~~Päivämäärä tulee automaattisesti järjestelmästä~~ **jää luultavasti tekemättä**
+ 
 - Merkkausten jälkeen voi kirjautua ulos järjestelmästä -> **tehty**
 
 *Mahdolliset laajennukset:*
