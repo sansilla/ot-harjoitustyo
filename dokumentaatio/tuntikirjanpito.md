@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 24,5h**
+**Työhön käytetyt tunnit yhteensä: 26h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -92,7 +92,7 @@ Mitä tein: käyttäjälle näkyvien ominaisuksien kanssa taistelu
 
 Päivä: 3.5.
 
-Käytetty aika: 1h
+Käytetty aika: 2,5h
 
 Mitä tein: koodin parantelua
 
