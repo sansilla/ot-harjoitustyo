@@ -15,9 +15,11 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 
 - Järjestelmään voi kirjata päivän säähavainnot -> **tehty**
 
-- ~~Päivämäärä tulee automaattisesti järjestelmästä~~ **jää luultavasti tekemättä**
+- ~~Päivämäärä tulee automaattisesti järjestelmästä~~ -> **jää luultavasti tekemättä**
  
 - Merkkausten jälkeen voi kirjautua ulos järjestelmästä -> **tehty**
+
+- *Lisäys viikolla 6*: järjestelmä myös muistaa käyttäjän -> **tehty**
 
 *Mahdolliset laajennukset:*
 
