@@ -12,6 +12,8 @@ Sovelluksen käyttöliittymässä on tietyt näkymät, jotka ovat
 2. Ikkuna uuden käyttäjän luomiselle
 3. Näkymä kirjatuista säähavainnoista
 
+Kaikilla näkymillä on oma toteutusluokka ui-osiossa. Kaikkien toiminnallisuudesta vastaa luokka UI. Sovelluslogiikka ja käyttöliittymä ovat erillisiä toisistaan, jotta koodia olisi helpompi lukea.
+
 ## Sovelluslogiikka ##
 
 Luokat Note ja Diary toimivat sovelluksen pohjana, ja kuvaavat sovellukseen kirjautunutta käyttäjää sekä tämän kirjaamia käyttäjän säähavaintoja.
@@ -31,3 +33,7 @@ Luokat Note ja Diary toimivat sovelluksen pohjana, ja kuvaavat sovellukseen kirj
 ```
 
 Luokka NoteService hoitaa sovelluksen toiminnallisuuden. Se mahdollistaa käyttöliittymän toiminnan erilaisilla metodeilla.
+
+## Tietojen talletus ##
+
+Tietoja tallennetaan working-osion luokissa *Note* ja *AboutUsers*. Kaikki käyttäjät tallentuvat AboutUsers-luokan avulla SQLite-tietokantaan, ja käyttäjien muistiinpanot taas yhteen csv-tiedostoon.
