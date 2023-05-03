@@ -12,6 +12,10 @@ Jotta ohjelma toimii, täytyy asentaa riippuvuudet. Käytetään komentoa:
 
 - **poetry install**
 
+Sitten täytyy siirtyä virtuaaliympäristöön komennolla:
+
+- **poetry shell**
+
 #Tarvitaanko alustustoimenpiteitä?
 
 
