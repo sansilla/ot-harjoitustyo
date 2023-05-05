@@ -24,17 +24,18 @@ Sitten ohjelma käynnistyy komennolla:
 
 - **poetry run invoke start**
 
-## Sisäänkirjautuminen ##
+## Sisäänkirjautuminen olemassa olevalla käyttäjällä ##
 
-- Sovellus avaa ikkunan
+Sovellus avaa ikkunan, johon on mahdollista syöttää jo luotu käyttäjänimi, ja painaa tämän jälkeen "Kirjaudu sisään" -painiketta. 
 
+## Uuden käyttäjän luominen ##
 
-
-
-## Uusi käyttäjä ##
-
-- Ohje tähän
+Jos käyttäjää ei ole vielä luotu, voi sellaisen luoda painamalla "Luo uusi käyttäjä" -painiketta. Seuraavaan avautuvaan ikkunaan tulee "Käyttäjänimi" -kenttä, johon voi syöttää uuden käyttäjän. Tämän jälkeen painamalla "Luo uusi ja kirjaudu" -painiketta uusi käyttäjä luodaan, ja se kirjautuu heti sovellukseen.
 
 ## Säämuistiinpanon luominen ##
 
-#Ei toimi vielä
+Sovellukseen kirjauduttua aukeaa ikkuna, jossa on näkyvillä sekä käyttäjän edelliset muistiinpanot, että kirjoituskenttä uusille muistiinpanoille. Kenttään kirjoittamalla ja sen jälkeen "Kirjaa" -painiketta painamalla uusi muistiinpano tulee näkyville listan jatkoksi.
+
+## Uloskirjautuminen ##
+
+Painamalla "Uloskirjautuminen" -painiketta sovellus kirjaa käyttäjän ulos ja palaa sisäänkirjautumissivulle.
