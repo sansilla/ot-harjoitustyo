@@ -42,13 +42,14 @@ class Note:
             for line in file:
                 line = line.replace("\n", "")
                 parts = line.split(":")
-                #un = parts[0]
+                user_item = parts[0]
+                note = parts[1]
                 #apu = parts[0].split("'")
                 #print(apu[1])
                 #usse = create_user.find_by_name(apu[1])
                 #print(usse)
                 #if str(usse) in line:
-                list1.append(str(parts[1]))
+                list1.append(str(note))
         return list1
     
     def delete(self):
