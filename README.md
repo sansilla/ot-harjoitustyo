@@ -1,8 +1,8 @@
-## Sääpäiväkirja
+# Sääpäiväkirja #
 
 Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkastella aiemmin kirjaamiaan havaintoja. Sovellukseen voi luoda käyttäjän, joka yksilöi omat säähavainnot.
 
-**Dokumentaatio**
+## Dokumentaatio ##
 
 - [Vaatimusmäärittely](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/vaatimusmaarittely.md)
 
@@ -16,24 +16,24 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 
 - [Arkkitehtuurikuvaus](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
 
-**Asentaminen**
+## Asentaminen ##
 
 1. Aloita asentamalla riippuvuudet komennolla:
 
-- poetry install
+- **poetry install**
 
 2. Siirry virtuaaliympäristöön komennolla:
 
-- poetry shell
+- **poetry shell**
 
 3. Alusta sovellus komennolla:
 
-- poetry run invoke build
+- **poetry run invoke build**
 
 4. Sovelluksen käynnistäminen tapahtuu komennolla:
 
-- poetry run invoke start
+- **poetry run invoke start**
 
-**Komentorivin komennot**
+## Komentorivin komennot ##
 
 - Tänne niitä
