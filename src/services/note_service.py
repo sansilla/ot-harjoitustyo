@@ -30,7 +30,7 @@ class NoteService:
         if not self._user:
             return []
 
-        notes = self._create_note._read() #find_by_username(self._user.name)
+        notes = self._create_note.show_all() #find_by_username(self._user.name)
 
         return list(notes)
 
@@ -61,7 +61,7 @@ class NoteService:
         if login:
             self._user = user
 
-        return user
+        return user.name # name perään
 
 
 note_service = NoteService()
