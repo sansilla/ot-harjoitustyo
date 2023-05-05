@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 26h**
+**Työhön käytetyt tunnit yhteensä: 30h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -97,3 +97,9 @@ Käytetty aika: 2,5h
 Mitä tein: koodin parantelua
 
 -----------------------------------------------------------------------------------------------
+
+Päivä 5.5.
+
+Käytetty aika: 4h
+
+Mitä tein: ärsyynnyin, korjailin koodia, tein lisää testejä
