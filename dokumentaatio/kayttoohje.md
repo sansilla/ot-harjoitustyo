@@ -28,6 +28,10 @@ Sitten ohjelma käynnistyy komennolla:
 
 - Sovellus avaa ikkunan
 
+
+![](./kuvat/Screenshot from 2023-05-05 15-38-42.png)
+
+
 ## Uusi käyttäjä ##
 
 - Ohje tähän
