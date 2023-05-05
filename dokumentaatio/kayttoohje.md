@@ -16,16 +16,17 @@ Sitten täytyy siirtyä virtuaaliympäristöön komennolla:
 
 - **poetry shell**
 
-#Tarvitaanko alustustoimenpiteitä?
+Sovelluksen alustus hoituu komennolla:
 
+- **poetry run invoke build**
 
-Ohjelma käynnistyy komennolla:
+Sitten ohjelma käynnistyy komennolla:
 
 - **poetry run invoke start**
 
 ## Sisäänkirjautuminen ##
 
-- Ohje tähän
+- Sovellus avaa ikkunan
 
 ## Uusi käyttäjä ##
 
