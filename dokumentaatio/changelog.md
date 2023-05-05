@@ -26,3 +26,4 @@
 
 - Muistiinpanot näkyvät käyttäjälle (myös muiden käyttäjien tekemät)
 - Sovellus näyttää (kirjautumistavasta riippuen hieman poikkeavasti) kuka sovellukseen on kirjautunut
+- Testejä AboutUsers-luokalle sekä Note-luokalle
