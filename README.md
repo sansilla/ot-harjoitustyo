@@ -15,3 +15,25 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 - [Uusin release](https://github.com/sansilla/ot-harjoitustyo/releases/tag/viikko6)
 
 - [Arkkitehtuurikuvaus](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+**Asentaminen**
+
+1. Aloita asentamalla riippuvuudet komennolla:
+
+- poetry install
+
+2. Siirry virtuaaliympäristöön komennolla:
+
+- poetry shell
+
+3. Alusta sovellus komennolla:
+
+- poetry run invoke build
+
+4. Sovelluksen käynnistäminen tapahtuu komennolla:
+
+- poetry run invoke start
+
+**Komentorivin komennot**
+
+- Tänne niitä
