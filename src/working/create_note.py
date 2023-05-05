@@ -6,10 +6,25 @@ from config import NOTES_FILE_PATH
 
 
 class Note:
+    """Luokka, joka hoitaa muistiinpanoista riippuvat tietokannan muokkaamiset
+    """
     def __init__(self, file_path):
+        """Konstruktori
+
+        Args:
+            file_path: reitti tehtävät tallentavaan tiedostoon
+        """
         self._file_path = file_path
 
     def new_note(self, note):
+        """Luo uuden muistiinpanon ja tallentaa sen tietokantaan
+
+        Args:
+            note: muistiinpano, joka halutaan tallentaa
+
+        Returns:
+            Muistiinpano (pelkkänä tekstinä)
+        """
         #print(note.user)
         notes = self._read()
         notes.append(note)
