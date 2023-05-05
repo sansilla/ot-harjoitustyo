@@ -100,6 +100,6 @@ Mitä tein: koodin parantelua
 
 Päivä 5.5.
 
-Käytetty aika: 4h
+Käytetty aika: 5h
 
-Mitä tein: ärsyynnyin, korjailin koodia, tein lisää testejä
+Mitä tein: ärsyynnyin ja turhauduin, korjailin koodia, tein lisää testejä, docstringin latelua
