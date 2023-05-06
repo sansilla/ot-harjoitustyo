@@ -8,4 +8,3 @@ class User:
             name: merkkijono, joka on käyttäjän käyttäjänimi
         """
         self.name = name
-        # self.password = password
