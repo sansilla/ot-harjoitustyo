@@ -27,13 +27,11 @@ class NoteService:
 
     def get_notes(self):
         # näyttää notet
-        if not self._user:
-            return []
-
-        #notes = self._create_note.show_all() #find_by_username(self._user.name)
+        #if not self._user:
+            #return []
 
         notes = self._create_note.show_by_name(self._user)
-        return list(notes)
+        return notes
 
     def login(self, username):
         user = self._create_user.find_by_name(username)

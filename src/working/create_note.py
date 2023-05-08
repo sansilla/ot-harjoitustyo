@@ -59,7 +59,7 @@ class Note:
         with open(self._file_path, "a", encoding="UTF-8") as file:
             file.write(str(note.user)+":")
             file.write(str(note.note)+"\n")
-            print("uusi kirjaus:", note)
+            #print("uusi kirjaus:", note)
 
     def _is_file_real(self):
         Path(self._file_path).touch()
@@ -70,13 +70,7 @@ class Note:
         with open(self._file_path, encoding="UTF-8") as file:
             for line in file:
                 line = line.replace("\n", "")
-                parts = line.split(":")
-                note = parts[1]
-                user = parts[0]
-                print(user)
-                print(line) # uusi
-                list1.append(str(line)) # uusi
-                #list1.append(str(note))
+                list1.append(str(line))
         return list1
     
     def delete(self):

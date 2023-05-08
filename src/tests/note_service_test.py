@@ -10,6 +10,14 @@ class TemporaryNote:
     def show_all(self):
         return self.notes
     
+    def show_by_name(self, username):
+        notes = self.show_all()
+
+        these_notes = []
+        for note in notes:
+            these_notes.append(note)
+        return these_notes
+    
     def new_note(self, note):
         self.notes.append(note)
 

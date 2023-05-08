@@ -17,18 +17,29 @@ class TestNote(unittest.TestCase):
     def test_new_note(self):
         create_note.new_note(self.note1)
         notes = create_note.show_all()
+        notes_test = []
+        for row in notes:
+            parts = row.split(":")
+            note = parts[1]
+            notes_test.append(note)
 
-        self.assertEqual(len(notes), 1)
-        self.assertEqual(notes[0], self.note1.note)
+        self.assertEqual(len(notes_test), 1)
+        self.assertEqual(notes_test[0], self.note1.note)
 
     def test_show_all(self):
         create_note.new_note(self.note1)
         create_note.new_note(self.note2)
         notes = create_note.show_all()
 
+        notes_test = []
+        for row in notes:
+            parts = row.split(":")
+            note = parts[1]
+            notes_test.append(note)
+
         self.assertEqual(len(notes), 2)
-        self.assertEqual(notes[0], self.note1.note)
-        self.assertEqual(notes[1], self.note2.note)
+        self.assertEqual(notes_test[0], self.note1.note)
+        self.assertEqual(notes_test[1], self.note2.note)
 
     def test_delete(self):
         create_note.new_note(self.note1)
