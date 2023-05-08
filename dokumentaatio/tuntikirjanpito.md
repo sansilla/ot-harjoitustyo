@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 31h**
+**Työhön käytetyt tunnit yhteensä: 34,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -103,3 +103,13 @@ Päivä 5.5.
 Käytetty aika: 5h
 
 Mitä tein: ärsyynnyin ja turhauduin, korjailin koodia, tein lisää testejä, docstringin latelua
+
+-----------------------------------------------------------------------------------------------
+
+Päivä: 8.5.
+
+Käytetty aika: 3,5h
+
+Mitä tein: käyttäjän näkymän parantelua, lisää testejä
+
+-----------------------------------------------------------------------------------------------
