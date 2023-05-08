@@ -4,6 +4,7 @@ from working.create_user import create_user
 from base.diary import Diary
 from base.user import User
 
+
 class TestNote(unittest.TestCase):
     def setUp(self):
         create_user.delete()

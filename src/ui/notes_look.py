@@ -82,7 +82,7 @@ class NotesView:
 
         if note_inside:
             note_service.diary_note(note_inside)
-            #note_service.diary_note(note_inside) -- tähän muutos
+            # note_service.diary_note(note_inside) -- tähän muutos
             self._initialize_note_list()
             self._create_note_entry.delete(0, constants.END)
 

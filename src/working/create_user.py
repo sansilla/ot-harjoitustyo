@@ -5,9 +5,9 @@ from sql_database import get_some_service
 class AboutUsers:
     """Luokka, joka hoitaa käyttäjistä riippuvat tietokannan muokkaamiset
     """
+
     def __init__(self, service):
         """Konstruktori
-
         Args:
             service: tietokantayhteyteen liittyvä olio
         """
@@ -43,7 +43,8 @@ class AboutUsers:
             User-oliomuotoinen käyttäjä
         """
         cursor = self._service.cursor()
-        cursor.execute("INSERT INTO users_table (name) VALUES (?)", (user.name, ))
+        cursor.execute(
+            "INSERT INTO users_table (name) VALUES (?)", (user.name, ))
         self._service.commit()
         return user
 

@@ -1,16 +1,16 @@
 from pathlib import Path
-#from base.diary import Diary
-#from base.user import User
-#from working.create_user import create_user
+# from base.diary import Diary
+# from base.user import User
+# from working.create_user import create_user
 from config import NOTES_FILE_PATH
 
 
 class Note:
     """Luokka, joka hoitaa muistiinpanoista riippuvat tietokannan muokkaamiset
     """
+    
     def __init__(self, file_path):
         """Konstruktori
-
         Args:
             file_path: reitti tehtävät tallentavaan tiedostoon
         """
@@ -25,6 +25,7 @@ class Note:
         Returns:
             Muistiinpano (pelkkänä tekstinä)
         """
+
         notes = self._read()
         notes.append(note)
         self._add(note)
@@ -39,7 +40,14 @@ class Note:
         return self._read()
 
     def show_by_name(self, username):
+        """Palauttaa kirjautuneen käyttäjän muistiinpanot
 
+        Args:
+            username: käyttäjänimi, jonka perusteella etsitään Note-oliot
+
+        Returns:
+            Lista käyttäjän muistiinpanoja
+        """
         notes = self.show_all()
 
         shown_notes = []
@@ -64,11 +72,14 @@ class Note:
 
     def _read(self):
         self._is_file_real()
+        
         list1 = []
         with open(self._file_path, encoding="UTF-8") as file:
             for line in file:
                 line = line.replace("\n", "")
+
                 list1.append(str(line))
+
         return list1
 
     def delete(self):

@@ -14,7 +14,8 @@ class TestAboutUsers(unittest.TestCase):
         users = create_user.show_users()
 
         self.assertEqual(len(users), 1)
-        self.assertEqual(users[0][0], self.user_kekkonen.name) #name pois perästä
+        # name pois perästä
+        self.assertEqual(users[0][0], self.user_kekkonen.name)
 
     def test_show_users(self):
         create_user.create(self.user_kekkonen)
@@ -31,4 +32,3 @@ class TestAboutUsers(unittest.TestCase):
         user = create_user.find_by_name(self.user_kekkonen.name)
 
         self.assertEqual(user[1], self.user_kekkonen.name)
-

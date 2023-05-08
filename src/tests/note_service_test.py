@@ -3,13 +3,14 @@ from base.diary import Diary
 from base.user import User
 from services.note_service import NoteService, InvalidCredentialsError, UsernameAlreadyExistsError
 
+
 class TemporaryNote:
     def __init__(self, notes=None):
         self.notes = notes or []
 
     def show_all(self):
         return self.notes
-    
+
     def show_by_name(self, username):
         notes = self.show_all()
 
@@ -17,14 +18,15 @@ class TemporaryNote:
         for note in notes:
             these_notes.append(note)
         return these_notes
-    
+
     def new_note(self, note):
         self.notes.append(note)
 
         return note
-    
+
     def delete(self):
         self.notes = []
+
 
 class TemporaryAboutUsers:
     def __init__(self, users=None):
@@ -32,7 +34,7 @@ class TemporaryAboutUsers:
 
     def show_users(self):
         return self.users
-    
+
     def find_by_name(self, username):
         name = filter(lambda user: user.name == username, self.users)
 
@@ -44,7 +46,7 @@ class TemporaryAboutUsers:
         self.users.append(user)
 
         return user
-    
+
     def delete(self):
         self.users = []
 
@@ -89,7 +91,8 @@ class TestNoteService(unittest.TestCase):
         self.assertEqual(user.name, self.user_kekkonen.name)
 
     def test_login_with_invalid_name(self):
-        self.assertRaises(InvalidCredentialsError, lambda: self.note_service.login("test_invalid"))
+        self.assertRaises(InvalidCredentialsError,
+                          lambda: self.note_service.login("test_invalid"))
 
     def test_see_current_user(self):
         self.login_user(self.user_kekkonen)
