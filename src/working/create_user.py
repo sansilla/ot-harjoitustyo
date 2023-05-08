@@ -1,4 +1,4 @@
-from base.user import User
+
 from sql_database import get_some_service
 
 
@@ -13,10 +13,10 @@ class AboutUsers:
         """
         self._service = service
 
-    def show_users(self): #tarvitseeko tätä enää?
+    def show_users(self):
         cursor = self._service.cursor()
         users = cursor.execute(
-            "SELECT name FROM users_table").fetchall()  # ORDER BY name
+            "SELECT name FROM users_table").fetchall()
         return users
 
     def find_by_name(self, username):
@@ -31,8 +31,7 @@ class AboutUsers:
         cursor = self._service.cursor()
         cursor.execute("SELECT * FROM users_table WHERE name = ?", [username])
         row = cursor.fetchone()
-        #print(row)
-        return row # muutos !!!
+        return row
 
     def create(self, user):
         """Tallettaa uuden käyttäjän tietokantaan

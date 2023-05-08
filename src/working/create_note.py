@@ -1,7 +1,7 @@
 from pathlib import Path
-from base.diary import Diary
-from base.user import User
-from working.create_user import create_user
+#from base.diary import Diary
+#from base.user import User
+#from working.create_user import create_user
 from config import NOTES_FILE_PATH
 
 
@@ -25,12 +25,11 @@ class Note:
         Returns:
             Muistiinpano (pelkkänä tekstinä)
         """
-        #print(note.user)
         notes = self._read()
         notes.append(note)
         self._add(note)
         return note
-    
+
     def show_all(self):
         """Palauttaa muistiinpanot
 
@@ -38,7 +37,7 @@ class Note:
             Palauttaa listan muistiinpanoja
         """
         return self._read()
-    
+
     def show_by_name(self, username):
 
         notes = self.show_all()
@@ -47,8 +46,8 @@ class Note:
 
         for note in notes:
             if str(username) in note:
-                part = note.split(":") # uusi
-                note_part = part[1] # uusi
+                part = note.split(":")
+                note_part = part[1]
                 shown_notes.append(note_part)
 
         return shown_notes
@@ -59,7 +58,6 @@ class Note:
         with open(self._file_path, "a", encoding="UTF-8") as file:
             file.write(str(note.user)+":")
             file.write(str(note.note)+"\n")
-            #print("uusi kirjaus:", note)
 
     def _is_file_real(self):
         Path(self._file_path).touch()
@@ -72,7 +70,7 @@ class Note:
                 line = line.replace("\n", "")
                 list1.append(str(line))
         return list1
-    
+
     def delete(self):
         """Poistaa muistiinpanot
         """
