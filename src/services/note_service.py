@@ -30,8 +30,9 @@ class NoteService:
         if not self._user:
             return []
 
-        notes = self._create_note.show_all() #find_by_username(self._user.name)
+        #notes = self._create_note.show_all() #find_by_username(self._user.name)
 
+        notes = self._create_note.show_by_name(self._user)
         return list(notes)
 
     def login(self, username):
@@ -57,11 +58,12 @@ class NoteService:
             raise UsernameAlreadyExistsError("Käyttäjänimi on jo olemassa")
 
         user = self._create_user.create(User(username))
+        #help= (0, user.name)
 
         if login:
-            self._user = user
+            self._user = user #help
 
-        return user.name # name perään
+        return user
 
 
 note_service = NoteService()

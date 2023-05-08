@@ -38,6 +38,20 @@ class Note:
             Palauttaa listan muistiinpanoja
         """
         return self._read()
+    
+    def show_by_name(self, username):
+
+        notes = self.show_all()
+
+        shown_notes = []
+
+        for note in notes:
+            if str(username) in note:
+                part = note.split(":") # uusi
+                note_part = part[1] # uusi
+                shown_notes.append(note_part)
+
+        return shown_notes
 
     def _add(self, note):
         self._is_file_real()
@@ -57,14 +71,12 @@ class Note:
             for line in file:
                 line = line.replace("\n", "")
                 parts = line.split(":")
-                user_item = parts[0]
                 note = parts[1]
-                #apu = parts[0].split("'")
-                #print(apu[1])
-                #usse = create_user.find_by_name(apu[1])
-                #print(usse)
-                #if str(usse) in line:
-                list1.append(str(note))
+                user = parts[0]
+                print(user)
+                print(line) # uusi
+                list1.append(str(line)) # uusi
+                #list1.append(str(note))
         return list1
     
     def delete(self):
