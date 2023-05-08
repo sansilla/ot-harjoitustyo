@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 34,5h**
+**Työhön käytetyt tunnit yhteensä: 37,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -108,8 +108,8 @@ Mitä tein: ärsyynnyin ja turhauduin, korjailin koodia, tein lisää testejä, 
 
 Päivä: 8.5.
 
-Käytetty aika: 3,5h
+Käytetty aika: 6,5h
 
-Mitä tein: käyttäjän näkymän parantelua, lisää testejä
+Mitä tein: käyttäjän näkymän parantelua, lisää testejä, testikattavuus ylöspäin (87%)
 
 -----------------------------------------------------------------------------------------------
