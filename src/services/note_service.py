@@ -15,7 +15,16 @@ class UsernameAlreadyExistsError(Exception):
 
 
 class NoteService:
+    """Luokka, joka hoitaa sovelluslogiikkaa
+    """
     def __init__(self, create_note=default_note_re, create_user=default_user_re):
+        """Konstruktori, joka luo sovelluslogiikkaa hoitavan avun
+
+        Args:
+            create_note (optional): oletuksena Note-olio, jolla Note-luokan metodit
+            create_user (optional): oletuksena AboutUsers-olio, jolla AboutUsers-luokan metodit
+        """
+        
         self._user = None
         self._create_note = create_note
         self._create_user = create_user
