@@ -24,6 +24,7 @@
 
 ## Viikko 7
 
-- Muistiinpanot näkyvät käyttäjälle (myös muiden käyttäjien tekemät)
-- Sovellus näyttää (kirjautumistavasta riippuen hieman poikkeavasti) kuka sovellukseen on kirjautunut
+- Muistiinpanot näkyvät käyttäjälle
+- Jos sovellukseen kirjautuu ensimmäistä kertaa, näkyy käyttäjä User-oliona, eikä kirjoitetut muistiinpanot tallennu myöhemmin katseltaviksi (tosin kun uudelleen kirjautuu luodulla käyttäjällä, sovellus toimii sitten normaalisti)
+- Sovellus näyttää kuka sovellukseen on kirjautunut
 - Testejä AboutUsers-luokalle sekä Note-luokalle
