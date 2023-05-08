@@ -10,7 +10,7 @@ class TestAboutUsers(unittest.TestCase):
         self.user_sale = User("sale")
 
     def test_create(self):
-        create_user.create(self.user_kekkonen) #name pois perästä
+        create_user.create(self.user_kekkonen)
         users = create_user.show_users()
 
         self.assertEqual(len(users), 1)

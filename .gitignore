@@ -4,3 +4,5 @@ __pycache__
 htmlcov
 data/database.sqlite
 data/notes.csv
+data/test-database.sqlite
+data/test-notes.csv
