@@ -113,10 +113,11 @@ class NoteService:
             raise UsernameAlreadyExistsError("Käyttäjänimi on jo olemassa")
 
         user = self._create_user.create(User(username))
-        #help= (0, user.name)
+
+        print(user)
 
         if login:
-            self._user = user #help
+            self._user = user
 
         return user
 
