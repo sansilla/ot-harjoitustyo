@@ -43,7 +43,7 @@ class LoginLook:
         self._username_entry = ttk.Entry(master=self._frame)
 
         username_label.grid(padx=5, pady=5, sticky=constants.W)
-        self._username_entry.grid(padx=5, pady=5, sticky=constants.EW)
+        self._username_entry.grid(padx=5, pady=10, sticky=constants.EW)
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -53,7 +53,7 @@ class LoginLook:
         self._error_label = ttk.Label(
             master=self._frame, textvariable=self._error_variable, foreground="red")
 
-        self._error_label.grid(padx=5, pady=5)
+        self._error_label.grid(padx=5, pady=10)
 
         self._do_username_field()
 
@@ -65,7 +65,7 @@ class LoginLook:
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
 
-        login_button.grid(padx=5, pady=5, sticky=constants.EW)
-        create_user_button.grid(padx=5, pady=5, sticky=constants.EW)
+        login_button.grid(padx=5, pady=10, sticky=constants.EW)
+        create_user_button.grid(padx=5, pady=10, sticky=constants.EW)
 
         self._hide_error()

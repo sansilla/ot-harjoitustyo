@@ -26,7 +26,7 @@ class NoteListView:
         thing_frame = ttk.Frame(master=self._frame)
         label = ttk.Label(master=thing_frame, text=note)
 
-        label.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
+        label.grid(row=0, column=0, padx=5, pady=10, sticky=constants.W)
 
         thing_frame.grid_columnconfigure(0, weight=1)
         thing_frame.pack(fill=constants.X)
@@ -66,13 +66,13 @@ class NotesView:
 
     def _initialize_header(self):
         user_label = ttk.Label(
-            master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user}")
+            master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user[1]}")
         # pientä parantelua vailla
 
         logout_button = ttk.Button(
             master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)
 
-        user_label.grid(row=0, column=0, padx=5, pady=5, sticky=constants.W)
+        user_label.grid(row=0, column=0, padx=5, pady=10, sticky=constants.W)
 
         logout_button.grid(row=0, column=1, padx=5,
                            pady=5, sticky=constants.EW)
@@ -82,7 +82,6 @@ class NotesView:
 
         if note_inside:
             note_service.diary_note(note_inside)
-            # note_service.diary_note(note_inside) -- tähän muutos
             self._initialize_note_list()
             self._create_note_entry.delete(0, constants.END)
 
@@ -93,7 +92,7 @@ class NotesView:
             master=self._frame, text="Kirjaa", command=self._handle_create_note)
 
         self._create_note_entry.grid(
-            row=2, column=0, padx=5, pady=5, sticky=constants.EW)
+            row=2, column=0, padx=5, pady=10, sticky=constants.EW)
 
         create_note_button.grid(row=2, column=1, padx=5,
                                 pady=5, sticky=constants.EW)

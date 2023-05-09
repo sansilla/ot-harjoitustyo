@@ -1,5 +1,4 @@
 from tkinter import ttk, StringVar, constants
-#from ui.login_look import
 from services.note_service import UsernameAlreadyExistsError, note_service
 
 
@@ -31,7 +30,7 @@ class CreateUserLook:
         try:
             note_service.create_new_user(username)
             self._handle_creating()
-            #return user
+
         except UsernameAlreadyExistsError:
             self._show_error(f"Käyttäjänimi {username} on jo olemassa")
 
@@ -48,7 +47,7 @@ class CreateUserLook:
         self._username_entry = ttk.Entry(master=self._frame)
 
         username_label.grid(padx=5, pady=5, sticky=constants.W)
-        self._username_entry.grid(padx=5, pady=5, sticky=constants.EW)
+        self._username_entry.grid(padx=5, pady=10, sticky=constants.EW)
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -62,14 +61,10 @@ class CreateUserLook:
 
         self._initialize_name_field()
 
-        #create_user_button = ttk.Button(
-            #master=self._frame, text="Luo uusi ja kirjaa (ei toimi)", command=self._create_user_handler)
-
-        login_button = ttk.Button(master=self._frame, text="Kirjaudu uudella", command=self._create_user_handler) #handle_showing_login)
+        login_button = ttk.Button(master=self._frame, text="Luo uusi ja kirjaudu", command=self._create_user_handler) #handle_showing_login)
 
         self._frame.grid_columnconfigure(0, weight=1, minsize=400)
 
-        #create_user_button.grid(padx=5, pady=5, sticky=constants.EW)
         login_button.grid(padx=5, pady=5, sticky=constants.EW)
 
         self._hide_error()

@@ -46,7 +46,9 @@ class AboutUsers:
         cursor.execute(
             "INSERT INTO users_table (name) VALUES (?)", (user.name, ))
         self._service.commit()
-        return user
+        id = cursor.lastrowid
+        return (id, user.name)
+        #return user.name
 
     def delete(self):
         """Poistaa käyttäjät
