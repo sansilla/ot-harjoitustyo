@@ -58,4 +58,7 @@ class AboutUsers:
         self._service.commit()
 
 
+
+# kommentti
+
 create_user = AboutUsers(get_some_service())
