@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 37,5h**
+**Työhön käytetyt tunnit yhteensä: 41,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -111,5 +111,13 @@ Päivä: 8.5.
 Käytetty aika: 6,5h
 
 Mitä tein: käyttäjän näkymän parantelua, lisää testejä, testikattavuus ylöspäin (87%)
+
+-----------------------------------------------------------------------------------------------
+
+Päivä 9.5.
+
+Käytetty aika: 4h
+
+Mitä tein: käyttäjän näkymän parantelu, sovelluksen toimivuuden korjailu
 
 -----------------------------------------------------------------------------------------------
