@@ -16,7 +16,15 @@ Working-osion luokkia *AboutUsers* ja *Note* testataan luokissa *TestAboutUsers*
 
 ## Testikattavuus ##
 
-Sovelluksen haaraumakattavuus on 87%. Käyttöliittymäosiota ei otettu testeihin mukaan.
+Sovelluksen testauksen haaraumakattavuus on 87%. Käyttöliittymäosiota ei otettu testeihin mukaan. Testaamatta jäi myös uloskirjautuminen.
 
-KUVA TÄHÄN
 ![](./kuvat/coverage_report_5.png)
+
+## Järjestelmätestaus ##
+
+Sovelluksen toimivuutta on testattu manuaalisesti. Testaus on suoritettu sekä siten, että tiedostot käyttäjien
+sekä muistiinpanojen tallentamiselle on ollut jo olemassa, sekä siten, että tiedostoja ei ole ollut valmiina ja sovellus on alustanut ne itse.
+
+## Toiminnallisuus ##
+
+Määrittelydokumentin toiminnallisuudet (päivitetyiltä osin) on testattu. Sovelluksen aikana avautuviin kirjauskenttiin on koitettu syöttää toimimattomia arvoja.
