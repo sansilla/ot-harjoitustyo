@@ -25,15 +25,43 @@ Luokat Note ja Diary toimivat sovelluksen pohjana, ja kuvaavat sovellukseen kirj
      
       class Diary{
           notes/säähavainnot
-          mahd. päivämäärä
+          käyttäjä
       }
       class User{
-          username/käyttäjänimi
+          name/käyttäjänimi
       }
 ```
 
-Luokka NoteService hoitaa sovelluksen toiminnallisuuden. Se mahdollistaa käyttöliittymän toiminnan erilaisilla metodeilla.
+Luokka NoteService hoitaa sovelluksen toiminnallisuuden. Se mahdollistaa käyttöliittymän toiminnan erilaisilla metodeilla, joita ovat muun muassa:
+
+- **login(username)** - kirjaa käyttäjän sisään
+
+- **get_notes()** - hakee käyttäjän kirjaamat muistiinpanot
+
+- **diary_note(note)** - luo uuden muistiinpanon
 
 ## Tietojen talletus ##
 
 Tietoja tallennetaan working-osion luokissa *Note* ja *AboutUsers*. Kaikki käyttäjät tallentuvat AboutUsers-luokan avulla SQLite-tietokantaan, ja käyttäjien muistiinpanot taas yhteen csv-tiedostoon.
+
+Muistiinpanojen lisäksi csv-tiedostoon kirjataan rivin alkuun käyttäjä olio-muodossa, eli käyttäjän SQLite-tietokantaan tallentuva id-numero sekä käyttäjänimi. Nämä arvot erotetaan toisistaan kaksoispisteellä (:).
+
+Käyttäjien tallennus (id-numero ja käyttäjänimi) tapahtuu siis SQLite-tietokannan taulukkoon, joka alustetaan tiedostossa *initialize_database.py*.
+
+## Päätoiminnallisuus ##
+
+**Olemassa olevan käyttäjän kirjautuminen**
+
+Tähän asiaa.
+
+**Uuden käyttäjän rekisteröiminen**
+
+Tähänkin.
+
+**Muistiinpanon kirjaaminen**
+
+Päläpälä.
+
+## Häröt sovelluksessa ##
+
+Pylint ilmoittaa kutsuttavasta id-asiasta *jotain*. Kirjaa tähän tarkemmin.
