@@ -52,11 +52,15 @@ Käyttäjien tallennus (id-numero ja käyttäjänimi) tapahtuu siis SQLite-tieto
 
 **Olemassa olevan käyttäjän kirjautuminen**
 
-Tähän asiaa.
+Sovelluksen toiminta tässä vaiheessa etenee seuraavasti:
+
+Sisäänkirjautuessa "Käyttäjänimi"-kenttään syötetään oikea käyttäjänimi ja painetaan "Kirjaudu sisään" painiketta. Tämä saa aikaan sen, että sovelluslogiikan *NoteService* metodia *login* kutsutaan käyttäjänimi parametrina. *AboutUsers*-luokan avulla sovelluslogiikka katsoo, onko käyttäjänimi jo olemassa tietokannassa. Jos on, sovellus kirjaa käyttäjän sisään ja käyttöliittymä avaa *NotesView* ikkunan. Jos taas sovellukseen koittaa kirjautua käyttäjänimellä, joka ei ole tallennettuna tietokantaan, antaa *AboutUsers*-luokka None-tiedon sovelluslogiikalle, joka antaa käyttäjälle tiedon virheellisestä käyttäjänimestä.
 
 **Uuden käyttäjän rekisteröiminen**
 
-Tähänkin.
+Sovelluksen toiminta tässä vaiheessa etenee seuraavasti:
+
+Uuden käyttäjän rekisteröinti -ikkunassa "Käyttäjänimi"-kenttään syötetään uusi käyttäjänimi.  Kun tämän jälkeen painetaan "Luo uusi ja kirjaudu" painiketta, sovelluslogiikan *create_new_user*-metodia kutsutaan parametrina kirjattu uusi käyttäjänimi. Sovelluslogiikka tarkastaa *AboutUsers*-luokan kautta, onko käyttäjänimi jo käytössä. *AboutUsers*-luokka antaa tästä tiedon sovelluslogiikalle, joka tarvittaessa kertoo käyttäjälle, jos käyttäjänimi on jo olemassa. Jos taas käyttäjänimi ei ole vielä olemassa, sovelluslogiikka luo uuden *User*-olion ja tallentaa sen *AboutUsers*-luokan *create*-metodia kutsumalla. Tämän jälkeen uusi käyttäjä kirjataan sovellukseen siälle, ja käyttöliittymä antaa *NotesView*-ikkunan.
 
 **Muistiinpanon kirjaaminen**
 
