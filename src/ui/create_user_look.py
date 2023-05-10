@@ -3,7 +3,16 @@ from services.note_service import UsernameAlreadyExistsError, note_service
 
 
 class CreateUserLook:
+    """Näkymä, kun luodaan uusi käyttäjä
+    """
     def __init__(self, root, handle_creating, handle_showing_login):
+        """Konstruktori, joka tekee näkymän rekisteröitymiselle
+
+        Args:
+            root: tkinter-rakenne, jossa näkymä luodaan
+            handle_creating (arvo): kutsutaan, kun rekisteröidään käyttäjä. Argumentteina käyttäjänimi
+            handle_showing_login (arvo): kutsutaan, kun siirrytään kirjautumaan sisään
+        """
         self._root = root
         self._handle_creating = handle_creating
         self._handle_showing_login = handle_showing_login
@@ -15,9 +24,13 @@ class CreateUserLook:
         self._initialize()
 
     def pack(self):
+        """Näyttää ikkunan
+        """
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Tuhoaa ikkunan
+        """
         self._frame.destroy()
 
     def _create_user_handler(self):

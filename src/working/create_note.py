@@ -1,14 +1,11 @@
 from pathlib import Path
-# from base.diary import Diary
-# from base.user import User
-# from working.create_user import create_user
 from config import NOTES_FILE_PATH
 
 
 class Note:
     """Luokka, joka hoitaa muistiinpanoista riippuvat tietokannan muokkaamiset
     """
-    
+
     def __init__(self, file_path):
         """Konstruktori
         Args:
@@ -62,7 +59,7 @@ class Note:
 
     def _add(self, note):
         self._is_file_real()
-        # alempaan: w vai a ?????
+
         with open(self._file_path, "a", encoding="UTF-8") as file:
             file.write(str(note.user)+":")
             file.write(str(note.note)+"\n")
@@ -72,7 +69,7 @@ class Note:
 
     def _read(self):
         self._is_file_real()
-        
+
         list1 = []
         with open(self._file_path, encoding="UTF-8") as file:
             for line in file:

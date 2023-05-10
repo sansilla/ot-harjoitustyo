@@ -3,7 +3,15 @@ from services.note_service import note_service
 
 
 class NoteListView:
+    """Näkymä, joka hoitaa muistiinpanojen listauksen
+    """
     def __init__(self, root, notes):
+        """Konstruktori, joka tekee mustiinpanojen listanäkymän
+
+        Args:
+            root: tkinter-rakenne, jossa näkymä luodaan
+            notes: näytettävä lista Diary-olioiden note-osasta
+        """
         self._root = root
         self._notes = notes
         self._frame = None
@@ -17,9 +25,13 @@ class NoteListView:
             self._initialize_note_thing(note)
 
     def pack(self):
+        """Näyttää ikkunan
+        """
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Tuhoaa ikkunan
+        """
         self._frame.destroy()
 
     def _initialize_note_thing(self, note):
@@ -33,7 +45,15 @@ class NoteListView:
 
 
 class NotesView:
+    """Näkymä, joka vastaa muistiinpanojen lisäyksestä ja näyttämisestä
+    """
     def __init__(self, root, handle_logout):
+        """Konstruktori, joka tekee muistiinpanonäkymän
+
+        Args:
+            root: tkinter-rakenne, jossa näkymä luodaan
+            handle_logout (arvo): kutsutaan, kun kirjaudutaan ulos
+        """
         self._root = root
         self._handle_logout = handle_logout
         self._user = note_service.see_current_user()
@@ -45,9 +65,13 @@ class NotesView:
         self._initialize()
 
     def pack(self):
+        """Näyttää ikkunan
+        """
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Tuhoaa ikkunan
+        """
         self._frame.destroy()
 
     def _logout_helper(self):
@@ -67,7 +91,6 @@ class NotesView:
     def _initialize_header(self):
         user_label = ttk.Label(
             master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user[1]}")
-        # pientä parantelua vailla
 
         logout_button = ttk.Button(
             master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)

@@ -24,7 +24,7 @@ class NoteService:
             create_note (optional): oletuksena Note-olio, jolla Note-luokan metodit
             create_user (optional): oletuksena AboutUsers-olio, jolla AboutUsers-luokan metodit
         """
-        
+
         self._user = None
         self._create_note = create_note
         self._create_user = create_user
@@ -69,7 +69,7 @@ class NoteService:
         user = self._create_user.find_by_name(username)
         if not user:
             raise InvalidCredentialsError("Virheellinen käyttäjänimi")
-        
+
         self._user = user
         return user
 
@@ -81,14 +81,6 @@ class NoteService:
         """
         return self._user
 
-    #def see_users(self):
-        #"""Palauttaa kaikki käyttäjänimet
-
-        #Returns:
-            #Lista käyttäjänimiä
-        #"""
-        #return self._create_user.show_users()
-
     def logout(self):
         """Uloskirjaa sisälläolevan käyttäjän
         """
@@ -99,7 +91,8 @@ class NoteService:
 
         Args:
             username: merkkijono, käyttäjätunnus
-            login (optional): oletusarvona True. Totuusarvo, joka näyttää, kirjattiinko käyttäjä sisään
+            login (optional): oletusarvona True. Totuusarvo,
+            joka näyttää, kirjattiinko käyttäjä sisään
 
         Raises:
             UsernameAlreadyExistsError: virhe, joka kertoo, että käyttäjänimi on jo olemassa
@@ -113,8 +106,6 @@ class NoteService:
             raise UsernameAlreadyExistsError("Käyttäjänimi on jo olemassa")
 
         user = self._create_user.create(User(username))
-
-        print(user)
 
         if login:
             self._user = user

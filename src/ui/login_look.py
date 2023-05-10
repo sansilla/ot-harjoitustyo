@@ -3,7 +3,16 @@ from services.note_service import note_service, InvalidCredentialsError
 
 
 class LoginLook:
+    """Näkymä, joka hoitaa sisäänkirjautumisen
+    """
     def __init__(self, root, handle_login, handle_create_user_look):
+        """Konstruktori, joka luo kirjautumisikkunan
+
+        Args:
+            root: tkinter-rakenne, jossa näkymä luodaan
+            handle_login (arvo): kutsutaan, kun kirjaudutaan sisään
+            handle_create_user_look (arvo): kutsutaan, kun siirrytään luomaan uutta käyttäjää
+        """
         self._root = root
         self._handle_login = handle_login
         self._handle_create_user_look = handle_create_user_look
@@ -16,9 +25,13 @@ class LoginLook:
         self._initialize()
 
     def pack(self):
+        """Näyttää ikkunan
+        """
         self._frame.pack(fill=constants.X)
 
     def destroy(self):
+        """Tuhoaa ikkunan
+        """
         self._frame.destroy()
 
     def _do_login(self):

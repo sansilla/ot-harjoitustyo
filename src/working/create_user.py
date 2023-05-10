@@ -1,4 +1,3 @@
-
 from sql_database import get_some_service
 
 
@@ -14,6 +13,11 @@ class AboutUsers:
         self._service = service
 
     def show_users(self):
+        """Etsii kaikki käyttäjät tietokannasta
+
+        Returns:
+            Lista käyttäjistä User-olioina
+        """
         cursor = self._service.cursor()
         users = cursor.execute(
             "SELECT name FROM users_table").fetchall()
@@ -48,7 +52,6 @@ class AboutUsers:
         self._service.commit()
         id = cursor.lastrowid
         return (id, user.name)
-        #return user.name
 
     def delete(self):
         """Poistaa käyttäjät

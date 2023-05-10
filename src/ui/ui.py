@@ -4,11 +4,20 @@ from ui.create_user_look import CreateUserLook
 
 
 class UI:
+    """Luokka, joka hoitaa käyttöliittymää
+    """
     def __init__(self, root):
+        """Konstruktori, joka vastaa käyttöliittymän luokasta
+
+        Args:
+            root: tkinter-rakenne, jossa näkymä luodaan
+        """
         self._root = root
         self._current_look = None
 
     def start(self):
+        """Käynnistää käyttöliittymän
+        """
         self._show_login_look()
 
     def _show_login_look(self):
