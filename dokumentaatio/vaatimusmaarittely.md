@@ -1,16 +1,16 @@
-## Vaatimusmäärittely sääpäiväkirjalle ##
+# Vaatimusmäärittely sääpäiväkirjalle #
 
-*Tarkoitus:*
+## Tarkoitus ##
 
 Sovelluksen avulla voi ylläpitää päivittäistä havaintopäiväkirjaa päivän säästä. Sovellukseen voi rekisteröityä ja kirjata ylös omat säähavainnot.
 
-*Käyttäjät:*
+## Käyttäjät ##
 
 Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä".
 
-*Toiminnallisuudet*
+## Toiminnallisuudet ##
 
-**Sovelluksen avautuessa:**
+*Sovelluksen avautuessa:*
 
 - Sääpäiväkirjaan voi luoda oman käyttäjän
 
@@ -18,7 +18,7 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
   
 - Omalla käyttäjätunnuksella voi kirjautua sovellukseen
 
-**Sisäänkirjautuessa:**
+*Sisäänkirjautuessa:*
 
 - Järjestelmään voi kirjata päivän säähavainnot
  
@@ -26,7 +26,7 @@ Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä
 
 - Uuden käyttäjän luomisen jälkeen järjestelmä myös muistaa käyttäjän
 
-*Mahdolliset myöhemmät laajennukset:*
+## Mahdolliset myöhemmät laajennukset: ##
 
 - Päivämäärä tulisi automaattisesti järjestelmästä
 
