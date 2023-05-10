@@ -56,6 +56,6 @@ Testikattavuusraportti muodostuu htmlcov-hakemistoon komennolla:
 
 *Pylint-tarkistus*
 
-Sovelluksen tiedostojen Pylint-tarkistuksen saa suoritettua komennolla:
+Sovelluksen Pylint-tarkistuksen .pylintrc-tiedoston määritelmien mukaan saa suoritettua komennolla:
 
 - **poetry run invoke pylint**
