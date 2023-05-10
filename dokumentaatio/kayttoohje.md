@@ -28,7 +28,7 @@ Sitten ohjelma käynnistyy komennolla:
 
 Sovellus avaa ikkunan, johon on mahdollista syöttää jo luotu käyttäjänimi, ja painaa tämän jälkeen "Kirjaudu sisään" -painiketta.
 
-![](./kuvat/Screenshot from 2023-05-05 15-38-42.png)
+![](./kuvat/kirjautumisikkuna.png)
 
 
 ## Uuden käyttäjän luominen ##
