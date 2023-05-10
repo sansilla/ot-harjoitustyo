@@ -60,7 +60,7 @@ Sisäänkirjautuessa "Käyttäjänimi"-kenttään syötetään oikea käyttäjä
 
 Sovelluksen toiminta tässä vaiheessa etenee seuraavasti:
 
-Uuden käyttäjän rekisteröinti -ikkunassa "Käyttäjänimi"-kenttään syötetään uusi käyttäjänimi.  Kun tämän jälkeen painetaan "Luo uusi ja kirjaudu" painiketta, sovelluslogiikan *create_new_user*-metodia kutsutaan parametrina kirjattu uusi käyttäjänimi. Sovelluslogiikka tarkastaa *AboutUsers*-luokan kautta, onko käyttäjänimi jo käytössä. *AboutUsers*-luokka antaa tästä tiedon sovelluslogiikalle, joka tarvittaessa kertoo käyttäjälle, jos käyttäjänimi on jo olemassa. Jos taas käyttäjänimi ei ole vielä olemassa, sovelluslogiikka luo uuden *User*-olion ja tallentaa sen *AboutUsers*-luokan *create*-metodia kutsumalla. Tämän jälkeen uusi käyttäjä kirjataan sovellukseen siälle, ja käyttöliittymä antaa *NotesView*-ikkunan.
+Uuden käyttäjän rekisteröinti -ikkunassa "Käyttäjänimi"-kenttään syötetään uusi käyttäjänimi.  Kun tämän jälkeen painetaan "Luo uusi ja kirjaudu" painiketta, sovelluslogiikan *create_new_user*-metodia kutsutaan parametrina kirjattu uusi käyttäjänimi. Sovelluslogiikka tarkastaa *AboutUsers*-luokan kautta, onko käyttäjänimi jo käytössä. *AboutUsers*-luokka antaa tästä tiedon sovelluslogiikalle, joka tarvittaessa kertoo käyttäjälle, jos käyttäjänimi on jo olemassa. Jos taas käyttäjänimi ei ole vielä olemassa, sovelluslogiikka luo uuden *User*-olion ja tallentaa sen *AboutUsers*-luokan *create*-metodia kutsumalla. Tämän jälkeen uusi käyttäjä kirjataan sovellukseen sisälle, ja käyttöliittymä avaa *NotesView*-ikkunan.
 
 **Muistiinpanon kirjaaminen**
 
