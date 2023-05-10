@@ -8,37 +8,38 @@ Sovelluksen avulla voi ylläpitää päivittäistä havaintopäiväkirjaa päiv�
 
 Ainakin alussa käyttähärooleja tulee olemaan vain yksi, "normaali käyttäjä".
 
-*Toiminnallisuudet:*
-- Sääpäiväkirjaan voi luoda oman käyttäjän -> **tehty**
+*Toiminnallisuudet*
 
-  ¤ ~~Käyttäjän tunnuksella jotain vaatimuksia~~
+**Sovelluksen avautuessa:**
 
-- Järjestelmään voi kirjata päivän säähavainnot -> **tehty**
+- Sääpäiväkirjaan voi luoda oman käyttäjän
 
-- ~~Päivämäärä tulee automaattisesti järjestelmästä~~ -> **jää luultavasti tekemättä**
+  ¤ Käyttäjän tunnuksella vaatimus, ettei voi olla tyhjä merkkijono
+  
+- Omalla käyttäjätunnuksella voi kirjautua sovellukseen
+
+**Sisäänkirjautuessa:**
+
+- Järjestelmään voi kirjata päivän säähavainnot
  
-- Merkkausten jälkeen voi kirjautua ulos järjestelmästä -> **tehty**
+- Merkkausten jälkeen voi kirjautua ulos järjestelmästä
 
-- *Lisäys viikolla 6*: järjestelmä myös muistaa käyttäjän -> **tehty**
+- Uuden käyttäjän luomisen jälkeen järjestelmä myös muistaa käyttäjän
 
-*Mahdolliset laajennukset:*
+*Mahdolliset myöhemmät laajennukset:*
 
-- ~~Omat "kirjausboksit" joka kohdalle:~~
+- Päivämäärä tulisi automaattisesti järjestelmästä
 
-  ¤ ~~Päivämäärä~~
+- Omat "kirjausboksit" eri säähavainnoille, esimerkiksi:
   
-  ¤ ~~Lämpötila~~
+  ¤ Lämpötila
   
-  ¤ ~~Satoiko vettä/lunta/tms~~
+  ¤ Satoiko vettä/lunta/tms
   
-  ¤ ~~Paistoiko aurinko~~
-  
-  ¤ ~~Oliko tuulista~~
-  
-    - ~~Mahdollisesti tuulenvoimakkuuden kirjaus?~~
+  ¤ Tuulenvoimakkuus
 
-- ~~Mahdollinen lämpötilakäyrä?~~
+- Mahdollinen lämpötilakäyrä
 
-- ~~Ehkä mahdollisuus kirjautua salasanalla?~~
+- Ehkä mahdollisuus kirjautua salasanalla
 
-- Laajennukset eivät tule toteutumaan tämän kurssin aikana
+(Laajennukset eivät tule toteutumaan tämän kurssin aikana)
