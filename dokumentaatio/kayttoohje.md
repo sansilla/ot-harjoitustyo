@@ -28,16 +28,21 @@ Sitten ohjelma käynnistyy komennolla:
 
 Sovellus avaa ikkunan, johon on mahdollista syöttää jo luotu käyttäjänimi, ja painaa tämän jälkeen "Kirjaudu sisään" -painiketta.
 
-![](./kuvat/kirjautumisikkuna.png)
+![](./kuvat/k_ikkunaUUSI.png)
 
 
 ## Uuden käyttäjän luominen ##
 
 Jos käyttäjää ei ole vielä luotu, voi sellaisen luoda painamalla "Luo uusi käyttäjä" -painiketta. Seuraavaan avautuvaan ikkunaan tulee "Käyttäjänimi" -kenttä, johon voi syöttää uuden käyttäjän. Tämän jälkeen painamalla "Luo uusi ja kirjaudu" -painiketta uusi käyttäjä luodaan, ja se kirjautuu heti sovellukseen.
 
+![](./kuvat/uusi_kayttaja.png)
+
+
 ## Säämuistiinpanon luominen ##
 
 Sovellukseen kirjauduttua aukeaa ikkuna, jossa on näkyvillä sekä käyttäjän edelliset muistiinpanot, että kirjoituskenttä uusille muistiinpanoille. Kenttään kirjoittamalla ja sen jälkeen "Kirjaa" -painiketta painamalla uusi muistiinpano tulee näkyville listan jatkoksi.
+
+![](./kuvat/noteikkuna.png)
 
 ## Uloskirjautuminen ##
 
