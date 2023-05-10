@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 41,5h**
+**Työhön käytetyt tunnit yhteensä: 45h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -120,4 +120,11 @@ Käytetty aika: 4h
 
 Mitä tein: käyttäjän näkymän parantelu, sovelluksen toimivuuden korjailu
 
+-----------------------------------------------------------------------------------------------
+ Päivä: 10.5.
+ 
+ Käytetty aika: 3,5h
+ 
+ Mitä tein: dokumentaation päivittelyä ja parantelua
+ 
 -----------------------------------------------------------------------------------------------
