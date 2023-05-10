@@ -36,4 +36,26 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 
 ## Komentorivin komennot ##
 
-- Tänne niitä
+*Sovelluksen suoritus*
+
+Sovelluksen saa suoritettua komennolla:
+
+- **poetry run invoke start**
+
+*Sovelluksen testaus*
+
+Sovelluksen testauksen saa suoritettua komennolla:
+
+- **poetry run invoke test**
+
+*Testikattavuusraportti*
+
+Testikattavuusraportti muodostuu htmlcov-hakemistoon komennolla:
+
+- **poetry run invoke coverage-report**
+
+*Pylint-tarkistus*
+
+Sovelluksen tiedostojen Pylint-tarkistuksen saa suoritettua komennolla:
+
+- **poetry run invoke pylint**
