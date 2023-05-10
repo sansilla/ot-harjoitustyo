@@ -19,3 +19,4 @@ Working-osion luokkia *AboutUsers* ja *Note* testataan luokissa *TestAboutUsers*
 Sovelluksen haaraumakattavuus on 87%. Käyttöliittymäosiota ei otettu testeihin mukaan.
 
 KUVA TÄHÄN
+![](./kuvat/coverage_report_5.png)
