@@ -98,7 +98,7 @@ class NotesView:
         user_label.grid(row=0, column=0, padx=5, pady=10, sticky=constants.W)
 
         logout_button.grid(row=0, column=1, padx=5,
-                           pady=5, sticky=constants.EW)
+                           pady=5, sticky=(constants.E, constants.W))
 
     def _handle_create_note(self):
         note_inside = self._create_note_entry.get()
@@ -115,10 +115,10 @@ class NotesView:
             master=self._frame, text="Kirjaa", command=self._handle_create_note)
 
         self._create_note_entry.grid(
-            row=2, column=0, padx=5, pady=10, sticky=constants.EW)
+            row=2, column=0, padx=5, pady=10, sticky=(constants.E, constants.W))
 
         create_note_button.grid(row=2, column=1, padx=5,
-                                pady=5, sticky=constants.EW)
+                                pady=5, sticky=(constants.E, constants.W))
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -129,7 +129,7 @@ class NotesView:
         self._initialize_footer()
 
         self._note_list_frame.grid(
-            row=1, column=0, columnspan=2, sticky=constants.EW)
+            row=1, column=0, columnspan=2, sticky=(constants.E, constants.W))
 
-        self._frame.grid_columnconfigure(0, weight=1, minsize=400)
+        self._frame.grid_columnconfigure(0, weight=1, minsize=500)
         self._frame.grid_columnconfigure(1, weight=0)

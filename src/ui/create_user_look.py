@@ -60,7 +60,7 @@ class CreateUserLook:
         self._username_entry = ttk.Entry(master=self._frame)
 
         username_label.grid(padx=5, pady=5, sticky=constants.W)
-        self._username_entry.grid(padx=5, pady=10, sticky=constants.EW)
+        self._username_entry.grid(padx=5, pady=10, sticky=(constants.E, constants.W))
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -74,10 +74,10 @@ class CreateUserLook:
 
         self._initialize_name_field()
 
-        login_button = ttk.Button(master=self._frame, text="Luo uusi ja kirjaudu", command=self._create_user_handler) #handle_showing_login)
+        login_button = ttk.Button(master=self._frame, text="Luo uusi ja kirjaudu", command=self._create_user_handler)
 
-        self._frame.grid_columnconfigure(0, weight=1, minsize=400)
+        self._frame.grid_columnconfigure(0, weight=1, minsize=500)
 
-        login_button.grid(padx=5, pady=5, sticky=constants.EW)
+        login_button.grid(padx=5, pady=5, sticky=(constants.E, constants.W))
 
         self._hide_error()

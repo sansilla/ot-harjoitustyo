@@ -18,7 +18,6 @@ class LoginLook:
         self._handle_create_user_look = handle_create_user_look
         self._frame = None
         self._username_entry = None
-        self._password_entry = None
         self._error_variable = None
         self._error_label = None
 
@@ -56,7 +55,7 @@ class LoginLook:
         self._username_entry = ttk.Entry(master=self._frame)
 
         username_label.grid(padx=5, pady=5, sticky=constants.W)
-        self._username_entry.grid(padx=5, pady=10, sticky=constants.EW)
+        self._username_entry.grid(padx=5, pady=10, sticky=(constants.E, constants.W))
 
     def _initialize(self):
         self._frame = ttk.Frame(master=self._root)
@@ -76,9 +75,9 @@ class LoginLook:
         create_user_button = ttk.Button(
             master=self._frame, text="Luo uusi käyttäjä", command=self._handle_create_user_look)
 
-        self._frame.grid_columnconfigure(0, weight=1, minsize=400)
+        self._frame.grid_columnconfigure(0, weight=1, minsize=500)
 
-        login_button.grid(padx=5, pady=10, sticky=constants.EW)
-        create_user_button.grid(padx=5, pady=10, sticky=constants.EW)
+        login_button.grid(padx=5, pady=10, sticky=(constants.E, constants.W))
+        create_user_button.grid(padx=5, pady=10, sticky=(constants.E, constants.W))
 
         self._hide_error()
