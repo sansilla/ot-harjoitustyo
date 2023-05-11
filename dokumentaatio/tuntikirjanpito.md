@@ -1,4 +1,4 @@
-**Työhön käytetyt tunnit yhteensä: 46,5h**
+**Työhön käytetyt tunnit yhteensä: 47,5h**
 
 -----------------------------------------------------------------------------------------------
 
@@ -132,7 +132,7 @@ Mitä tein: dokumentaation päivittelyä ja parantelua
 
 Päivä: 11.5.
 
-Käytetty aika: 1,5h
+Käytetty aika: 2,5h
 
 Mitä tein: viimeistelyhommia dokumentaatioon, viimeiset testaukset sovelluksella
 
