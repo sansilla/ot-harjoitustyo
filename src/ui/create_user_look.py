@@ -26,7 +26,7 @@ class CreateUserLook:
     def pack(self):
         """Näyttää ikkunan
         """
-        self._frame.pack(fill=constants.X)
+        self._frame.pack(fill=constants.Y)
 
     def destroy(self):
         """Tuhoaa ikkunan
