@@ -1,6 +1,6 @@
 # Testausdokumentti #
 
-Ohjelmaa ja sen toimivuutta on testattu yksikkötesteillä sekä eri luokkia yhdistelevillä testeillä unittestillä.
+Ohjelmaa ja sen toimivuutta on testattu yksikkötesteillä sekä eri luokkia yhdistelevillä testeillä unittestillä. Toimivuus on testattu Python-versiolla 3.10.
 
 ## Sovelluslogiikka ##
 
@@ -28,3 +28,7 @@ sekä muistiinpanojen tallentamiselle on ollut jo olemassa, sekä siten, että t
 ## Toiminnallisuus ##
 
 Määrittelydokumentin toiminnallisuudet (päivitetyiltä osin) on testattu. Sovelluksen aikana avautuviin kirjauskenttiin on koitettu syöttää toimimattomia arvoja.
+
+## Pylint ##
+
+Pylint ilmoittaa luokan *create_user* metodista *create*, että siinä määritellään uudelleen sisäänrakennettu id-numero (W0622: Redefining built-in 'id' (redefined-builtin)). Kuitenkin, jos tämän määrittelyrivin ottaa pois, ei sovellus toimi halutulla tavalla.
