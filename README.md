@@ -12,9 +12,11 @@ Käyttäjä voi kirjata sovellukseen päivittäiset säähavaintonsa, ja tarkast
 
 - [Käyttöohje](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/kayttoohje.md)
 
-- [Uusin release](https://github.com/sansilla/ot-harjoitustyo/releases/tag/viikko6)
+- [Testausdokumentti](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/testaus.md)
 
 - [Arkkitehtuurikuvaus](https://github.com/sansilla/ot-harjoitustyo/blob/master/dokumentaatio/arkkitehtuuri.md)
+
+- [Uusin release](https://github.com/sansilla/ot-harjoitustyo/releases/tag/viikko6)
 
 ## Asentaminen ##
 
