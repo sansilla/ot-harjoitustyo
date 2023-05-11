@@ -14,31 +14,31 @@ class NoteListView:
         """
         self._root = root
         self._notes = notes
-        self._frame = None
+        self._window = None
 
-        self._initialize()
+        self._do_notes_window()
 
-    def _initialize(self):
-        self._frame = ttk.Frame(master=self._root)
+    def _do_notes_window(self):
+        self._window = ttk.Frame(master=self._root)
 
         for note in self._notes:
-            self._initialize_note_thing(note)
+            self._do_note_thing(note)
 
     def pack(self):
         """Näyttää ikkunan
         """
-        self._frame.pack(fill=constants.X)
+        self._window.pack(fill=constants.X)
 
     def destroy(self):
         """Tuhoaa ikkunan
         """
-        self._frame.destroy()
+        self._window.destroy()
 
-    def _initialize_note_thing(self, note):
-        thing_frame = ttk.Frame(master=self._frame)
+    def _do_note_thing(self, note):
+        thing_frame = ttk.Frame(master=self._window)
         label = ttk.Label(master=thing_frame, text=note)
 
-        label.grid(row=0, column=0, padx=5, pady=10, sticky=constants.W)
+        label.grid(row=0, column=0, padx=4, pady=10, sticky=constants.W)
 
         thing_frame.grid_columnconfigure(0, weight=1)
         thing_frame.pack(fill=constants.X)
@@ -57,28 +57,28 @@ class NotesView:
         self._root = root
         self._handle_logout = handle_logout
         self._user = note_service.see_current_user()
-        self._frame = None
+        self._window = None
         self._create_note_entry = None
         self._note_list_frame = None
         self._note_list_look = None
 
-        self._initialize()
+        self._do_notes_window()
 
     def pack(self):
         """Näyttää ikkunan
         """
-        self._frame.pack(fill=constants.X)
+        self._window.pack(fill=constants.X)
 
     def destroy(self):
         """Tuhoaa ikkunan
         """
-        self._frame.destroy()
+        self._window.destroy()
 
     def _logout_helper(self):
         note_service.logout()
         self._handle_logout()
 
-    def _initialize_note_list(self):
+    def _do_note_list(self):
         if self._note_list_look:
             self._note_list_look.destroy()
 
@@ -88,48 +88,48 @@ class NotesView:
 
         self._note_list_look.pack()
 
-    def _initialize_header(self):
+    def _do_header(self):
         user_label = ttk.Label(
-            master=self._frame, text=f"Kirjautuneena sisään käyttäjällä {self._user[1]}")
+            master=self._window, text=f"Kirjautuneena sisään käyttäjällä {self._user[1]}")
 
         logout_button = ttk.Button(
-            master=self._frame, text="Uloskirjautuminen", command=self._logout_helper)
+            master=self._window, text="Uloskirjautuminen", command=self._logout_helper)
 
-        user_label.grid(row=0, column=0, padx=5, pady=10, sticky=constants.W)
+        user_label.grid(row=0, column=0, padx=4, pady=10, sticky=constants.W)
 
-        logout_button.grid(row=0, column=1, padx=5,
-                           pady=5, sticky=(constants.E, constants.W))
+        logout_button.grid(row=0, column=1, padx=4,
+                           pady=10, sticky=(constants.E, constants.W))
 
     def _handle_create_note(self):
         note_inside = self._create_note_entry.get()
 
         if note_inside:
             note_service.diary_note(note_inside)
-            self._initialize_note_list()
+            self._do_note_list()
             self._create_note_entry.delete(0, constants.END)
 
-    def _initialize_footer(self):
-        self._create_note_entry = ttk.Entry(master=self._frame)
+    def _do_footer(self):
+        self._create_note_entry = ttk.Entry(master=self._window)
 
         create_note_button = ttk.Button(
-            master=self._frame, text="Kirjaa", command=self._handle_create_note)
+            master=self._window, text="Kirjaa", command=self._handle_create_note)
 
         self._create_note_entry.grid(
-            row=2, column=0, padx=5, pady=10, sticky=(constants.E, constants.W))
+            row=2, column=0, padx=4, pady=10, sticky=(constants.E, constants.W))
 
-        create_note_button.grid(row=2, column=1, padx=5,
+        create_note_button.grid(row=2, column=1, padx=4,
                                 pady=5, sticky=(constants.E, constants.W))
 
-    def _initialize(self):
-        self._frame = ttk.Frame(master=self._root)
-        self._note_list_frame = ttk.Frame(master=self._frame)
+    def _do_notes_window(self):
+        self._window = ttk.Frame(master=self._root)
+        self._note_list_frame = ttk.Frame(master=self._window)
 
-        self._initialize_header()
-        self._initialize_note_list()
-        self._initialize_footer()
+        self._do_header()
+        self._do_note_list()
+        self._do_footer()
 
         self._note_list_frame.grid(
             row=1, column=0, columnspan=2, sticky=(constants.E, constants.W))
 
-        self._frame.grid_columnconfigure(0, weight=1, minsize=500)
-        self._frame.grid_columnconfigure(1, weight=0)
+        self._window.grid_columnconfigure(0, weight=1, minsize=500)
+        self._window.grid_columnconfigure(1, weight=0)

@@ -16,22 +16,22 @@ class CreateUserLook:
         self._root = root
         self._handle_creating = handle_creating
         self._handle_showing_login = handle_showing_login
-        self._frame = None
+        self._window = None
         self._username_entry = None
         self._error_variable = None
         self._error_label = None
 
-        self._initialize()
+        self._do_creating_window()
 
     def pack(self):
         """Näyttää ikkunan
         """
-        self._frame.pack(fill=constants.Y)
+        self._window.pack(fill=constants.Y)
 
     def destroy(self):
         """Tuhoaa ikkunan
         """
-        self._frame.destroy()
+        self._window.destroy()
 
     def _create_user_handler(self):
         username = self._username_entry.get()
@@ -54,30 +54,30 @@ class CreateUserLook:
     def _hide_error(self):
         self._error_label.grid_remove()
 
-    def _initialize_name_field(self):
-        username_label = ttk.Label(master=self._frame, text="Käyttäjänimi:")
+    def _do_name_field(self):
+        username_label = ttk.Label(master=self._window, text="Käyttäjänimi:")
 
-        self._username_entry = ttk.Entry(master=self._frame)
+        self._username_entry = ttk.Entry(master=self._window)
 
-        username_label.grid(padx=5, pady=5, sticky=constants.W)
-        self._username_entry.grid(padx=5, pady=10, sticky=(constants.E, constants.W))
+        username_label.grid(row=0, padx=1, pady=10, sticky=constants.W)
+        self._username_entry.grid(row=1, padx=4, pady=10, sticky=(constants.E, constants.W))
 
-    def _initialize(self):
-        self._frame = ttk.Frame(master=self._root)
+    def _do_creating_window(self):
+        self._window = ttk.Frame(master=self._root)
 
-        self._error_variable = StringVar(self._frame)
+        self._error_variable = StringVar(self._window)
 
         self._error_label = ttk.Label(
-            master=self._frame, textvariable=self._error_variable, foreground="red")
+            master=self._window, textvariable=self._error_variable, foreground="red")
 
-        self._error_label.grid(padx=5, pady=5)
+        self._error_label.grid(padx=4, pady=10)
 
-        self._initialize_name_field()
+        self._do_name_field()
 
-        login_button = ttk.Button(master=self._frame, text="Luo uusi ja kirjaudu", command=self._create_user_handler)
+        login_button = ttk.Button(master=self._window, text="Luo uusi ja kirjaudu", command=self._create_user_handler)
 
-        self._frame.grid_columnconfigure(0, weight=1, minsize=500)
+        self._window.grid_columnconfigure(0, weight=1, minsize=500)
 
-        login_button.grid(padx=5, pady=5, sticky=(constants.E, constants.W))
+        login_button.grid(row=2, padx=4, pady=10, sticky=(constants.E, constants.W))
 
         self._hide_error()

@@ -6,11 +6,11 @@ from working.create_note import (create_note as default_note_re)
 from working.create_user import (create_user as default_user_re)
 
 
-class InvalidCredentialsError(Exception):
+class UsernameAlreadyExistsError(Exception):
     pass
 
 
-class UsernameAlreadyExistsError(Exception):
+class InvalidCredentialsError(Exception):
     pass
 
 

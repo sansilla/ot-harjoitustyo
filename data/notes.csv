@@ -1,21 +1,3 @@
-testi1:hehehe
-(1, 'testi1'):hehehe
-(1, 'testi1'):joojoo
-(1, 'testi1'):hehe
-testi2:hehehe
-testi2:toinen
-(2, 'testi2'):kirjataan
-(8, 'testi55'):hehehe
-(9, 'ss'):jeejee
-(10, 'testi666'):yooo
-(10, 'testi666'):hih
-(11, 'testi00'):uuu
-(12, '007'):agentti
-(9, 'ss'):uug
-(9, 'ss'):ii
-(9, 'ss'):ff
-(13, '000'):jeejee
-(14, '001'):testisana
 (15, '002'):heko
 (16, '003'):yyy
 (9, 'ss'):pliis
@@ -35,3 +17,11 @@ testi2:toinen
 (26, 'heikki'):jeejee
 (27, 'heikki2'):ttt
 (29, 'heikki4'):hehe
+(9, 'ss'):fff
+(30, 'heikki5'):uuh
+(9, 'ss'):daa
+(9, 'ss'):yoo
+(34, 'tane'):uu
+(9, 'ss'):toimii ok
+(35, 'heikki7'):hih
+(35, 'heikki7'):huh

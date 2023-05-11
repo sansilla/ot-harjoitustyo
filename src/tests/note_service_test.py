@@ -100,3 +100,11 @@ class TestNoteService(unittest.TestCase):
         curr_user = self.note_service.see_current_user()
 
         self.assertEqual(curr_user.name, self.user_kekkonen.name)
+
+    def test_create_new_user_not_ok_name(self):
+        username = self.user_kekkonen.name
+
+        self.note_service.create_new_user(username)
+
+        self.assertRaises(UsernameAlreadyExistsError, lambda: self.note_service.create_new_user(username))
+        
