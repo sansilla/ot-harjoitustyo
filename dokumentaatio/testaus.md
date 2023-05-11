@@ -16,11 +16,9 @@ Working-osion luokkia *AboutUsers* ja *Note* testataan luokissa *TestAboutUsers*
 
 ## Testikattavuus ##
 
-Sovelluksen testauksen haaraumakattavuus on 74%. Käyttöliittymäosiota ei otettu testeihin mukaan. Testaamatta jäi myös uloskirjautuminen.
+Sovelluksen testauksen haaraumakattavuus on 88%. Käyttöliittymäosiota ei otettu testeihin mukaan. Testaamatta jäi myös uloskirjautuminen.
 
-![](./kuvat/coverage_report_6.png)
-
-Pienin kattavuus oli *note_service*-osiossa, 19 kpl "missing"-kohtaa, joiden ilmestyminen kummastutti kovin, sillä vielä alla olevaa kuvanottopäivää edeltävänä päivänä tämän osion kattavuus oli 91%, enkä tietääkseni sen jälkeen tehnyt niin radikaaleja muutoksia osion koodiin (tai sen testaustiedostoon), mikä selittäisi alenemisen.
+![](./kuvat/coverage_report_7.png)
 
 ## Järjestelmätestaus ##
 
