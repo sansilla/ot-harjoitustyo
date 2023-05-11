@@ -22,14 +22,13 @@
 - Sovellus muistaa jo luodun käyttäjän, ja sillä voi kirjautua uudelleen sisään
 - Jonkin näköinen lista muistiinpanoja näkyy, mutta lista koostuu Diary-olioista (sekä näkyy kaikille käyttäjille samanlaisena)
 
-## Viikko 7
+## Viikko 7 (+loppupalautusta ennen olevat päivät)
 
 - Muistiinpanot näkyvät käyttäjälle
 - Jos sovellukseen kirjautuu ensimmäistä kertaa, näkyy käyttäjä User-oliona, eikä kirjoitetut muistiinpanot tallennu myöhemmin katseltaviksi (tosin kun uudelleen kirjautuu luodulla käyttäjällä, sovellus toimii sitten normaalisti)
 - Sovellus näyttää kuka sovellukseen on kirjautunut
 - Testejä AboutUsers-luokalle sekä Note-luokalle
 
-## Viikko 8 (loppupalautusta ennen olevat päivät)
-
 - Ensimmäisen kerran kirjautumisongelmat poissa!
 - Sovellus toimii niin kuin kuuluukin
+- Dokumentaatio valmis
