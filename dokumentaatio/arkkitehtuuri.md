@@ -54,7 +54,7 @@ Käyttäjien tallennus (id-numero ja käyttäjänimi) tapahtuu siis SQLite-tieto
 
 Sovelluksen toiminta tässä vaiheessa etenee seuraavasti:
 
-Sisäänkirjautuessa "Käyttäjänimi"-kenttään syötetään oikea käyttäjänimi ja painetaan "Kirjaudu sisään" painiketta. Tämä saa aikaan sen, että sovelluslogiikan *NoteService* metodia *login* kutsutaan käyttäjänimi parametrina. *AboutUsers*-luokan avulla sovelluslogiikka katsoo, onko käyttäjänimi jo olemassa tietokannassa. Jos on, sovellus kirjaa käyttäjän sisään ja käyttöliittymä avaa *NotesView* ikkunan. Jos taas sovellukseen koittaa kirjautua käyttäjänimellä, joka ei ole tallennettuna tietokantaan, antaa *AboutUsers*-luokka None-tiedon sovelluslogiikalle, joka antaa käyttäjälle tiedon virheellisestä käyttäjänimestä.
+Sisäänkirjautuessa "Käyttäjänimi" kenttään syötetään oikea käyttäjänimi ja painetaan "Kirjaudu sisään" painiketta. Tämä saa aikaan sen, että sovelluslogiikan *NoteService* metodia *login* kutsutaan käyttäjänimi parametrina. *AboutUsers*-luokan avulla sovelluslogiikka katsoo, onko käyttäjänimi jo olemassa tietokannassa. Jos on, sovellus kirjaa käyttäjän sisään ja käyttöliittymä avaa *NotesView* ikkunan. Jos taas sovellukseen koittaa kirjautua käyttäjänimellä, joka ei ole tallennettuna tietokantaan, antaa *AboutUsers*-luokka None-tiedon sovelluslogiikalle, joka antaa käyttäjälle tiedon virheellisestä käyttäjänimestä.
 
 **Uuden käyttäjän rekisteröiminen**
 
@@ -64,8 +64,10 @@ Uuden käyttäjän rekisteröinti -ikkunassa "Käyttäjänimi"-kenttään syöte
 
 **Muistiinpanon kirjaaminen**
 
-Päläpälä.
+Sovelluksen toiminta tässä vaiheessa etenee seuraavasti:
 
-## Häröt sovelluksessa ##
+Sisäänkirjautuneena käyttäjä voi syöttää tekstikenttään jonkin säähavainnon. Tämän jälkeen painamalla "Kirjaa" painiketta käyttöliittymä kertoo sovelluslogiikalle, että uusi säähavainto on tehty. Se kutsuu sovelluslogiikan *diary_note*-metodia parametrina juuri kirjattu säähavainto. Sovelluslogiikka tekee tästä havainnosta *Diary*-olion ja kutsuu *Note*-luokan metodia *new_note*, jonka avulla säähavainto tallennetaan csv-tiedostoon käyttäjänimen kera. Seuraavaksi käyttöliittymä päivittää ikkunanäkymän kutsumalla sisäisesti metodia *_initialize_note_list*, ja uusi säähavainto siirtyy listan jatkeeksi.
 
-Pylint ilmoittaa kutsuttavasta id-asiasta *jotain*. Kirjaa tähän tarkemmin.
+## Häröt sovelluksen rakenteessa ##
+
+Pylint ilmoittaa luokan *create_user* metodista *create*, että siinä määritellään uudelleen sisäänrakennettu id-numero (W0622: Redefining built-in 'id' (redefined-builtin)). Kuitenkin, jos tämän määrittelyrivin ottaa pois, ei sovellus toimi halutulla tavalla.
